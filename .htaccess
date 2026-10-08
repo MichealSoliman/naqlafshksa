@@ -1,0 +1,73 @@
+# Apache Configuration File for شركة نقل عفش (naqlafshksa.com)
+
+# Enable Rewrite Engine
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+
+    # Redirect HTTP to HTTPS
+    RewriteCond %{HTTPS} off
+    RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+
+    # Redirect non-www to www (enforcing www.naqlafshksa.com)
+    RewriteCond %{HTTP_HOST} ^naqlafshksa\.com$ [NC]
+    RewriteRule ^(.*)$ https://www.naqlafshksa.com/$1 [R=301,L]
+</IfModule>
+
+# Custom 404 Error Page
+ErrorDocument 404 /404.html
+
+# Enable Gzip / Brotli Compression for Performance
+<IfModule mod_deflate.c>
+    # Compress HTML, CSS, JavaScript, Text, XML and fonts
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/x-javascript application/json application/xml application/rss+xml image/svg+xml font/ttf font/otf font/woff font/woff2 application/vnd.ms-fontobject
+</IfModule>
+
+# Cache-Control & Expires Headers for Maximum Performance
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresDefault "access plus 1 month"
+    
+    # Images & Favicons
+    ExpiresByType image/jpg "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/webp "access plus 1 year"
+    ExpiresByType image/avif "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+    ExpiresByType image/x-icon "access plus 1 year"
+    
+    # CSS and JavaScript
+    ExpiresByType text/css "access plus 1 year"
+    ExpiresByType application/javascript "access plus 1 year"
+    ExpiresByType text/javascript "access plus 1 year"
+    
+    # Web Fonts
+    ExpiresByType font/ttf "access plus 1 year"
+    ExpiresByType font/otf "access plus 1 year"
+    ExpiresByType font/woff "access plus 1 year"
+    ExpiresByType font/woff2 "access plus 1 year"
+    ExpiresByType application/font-woff "access plus 1 year"
+</IfModule>
+
+<IfModule mod_headers.c>
+    # Leverage Browser Caching via Cache-Control
+    <FilesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|webp|avif|js|css|swf|svg|ttf|otf|woff|woff2)$">
+        Header set Cache-Control "max-age=31536000, public, immutable"
+    </FilesMatch>
+    
+    <FilesMatch "\.(html|htm)$">
+        Header set Cache-Control "max-age=3600, private, must-revalidate"
+    </FilesMatch>
+
+    # Security & Performance Headers
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set X-XSS-Protection "1; mode=block"
+    Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# UTF-8 Encoding Standard
+AddDefaultCharset UTF-8
+

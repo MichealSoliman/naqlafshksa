@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+    <!-- Homepage -->
+    <url>
+        <loc>https://www.naqlafshksa.com/</loc>
+        <lastmod>2026-10-08</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.00</priority>
+    </url>
+
+    <!-- Blog Main Page -->
+    <url>
+        <loc>https://www.naqlafshksa.com/blog/</loc>
+        <lastmod>2026-10-08</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://www.naqlafshksa.com/about/</loc>
+        <lastmod>2026-10-08</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://www.naqlafshksa.com/contact/</loc>
+        <lastmod>2026-10-08</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.80</priority>
+    </url>
+
+    <!-- Blog Posts -->
+    <url>
+        <loc>https://www.naqlafshksa.com/blog/move-furniture-riyadh-without-damage/</loc>
+        <lastmod>2026-10-08</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.70</priority>
+    </url>
+    <url>
+        <loc>https://www.naqlafshksa.com/blog/furniture-packaging-materials-riyadh/</loc>
+        <lastmod>2026-10-08</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.70</priority>
+    </url>
+    <url>
+        <loc>https://www.naqlafshksa.com/blog/how-to-choose-best-furniture-moving-company-riyadh/</loc>
+        <lastmod>2026-10-08</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.70</priority>
+    </url>
+    <url>
+        <loc>https://www.naqlafshksa.com/dina-furniture-moving-riyadh/</loc>
+        <lastmod>2026-10-08</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.70</priority>
+    </url>
+    <url>
+        <loc>https://www.naqlafshksa.com/furniture-disassembly-and-reassembly-in-riyadh/</loc>
+        <lastmod>2026-10-08</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.70</priority>
+    </url>
+    <url>
+        <loc>https://www.naqlafshksa.com/furniture-packaging-wrapping-riyadh/</loc>
+        <lastmod>2026-10-08</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.70</priority>
+    </url>
+    <url>
+        <loc>https://www.naqlafshksa.com/furniture-storage-riyadh/</loc>
+        <lastmod>2026-10-08</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.70</priority>
+    </url>
+    <url>
+        <loc>https://www.naqlafshksa.com/furniture-moving-outside-riyadh/</loc>
+        <lastmod>2026-10-08</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.70</priority>
+    </url>
+    <url>
+        <loc>https://www.naqlafshksa.com/services.html</loc>
+        <lastmod>2026-10-08</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.80</priority>
+    </url>
+
+    <!-- Privacy Policy Page -->
+    <url>
+        <loc>https://www.naqlafshksa.com/privacy-policy.html</loc>
+        <lastmod>2026-10-08</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.30</priority>
+    </url>
+
+</urlset>

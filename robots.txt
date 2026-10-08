@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Disallow admin or private directories if any
+Disallow: /cgi-bin/
+
+# XML Sitemap Location
+Sitemap: https://www.naqlafshksa.com/sitemap.xml

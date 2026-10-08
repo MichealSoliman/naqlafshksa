@@ -1,0 +1,19 @@
+{
+  "name": "شركة مسار لنقل العفش بالرياض",
+  "short_name": "شركة مسار",
+  "icons": [
+    {
+      "src": "/favicon/favicon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#153052",
+  "background_color": "#ffffff",
+  "display": "standalone"
+}
