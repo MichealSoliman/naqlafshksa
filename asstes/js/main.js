@@ -41,6 +41,12 @@ function renderServicesDropdown() {
             desc: "نقل بين المدن مع الضمان",
             slug: "furniture-moving-outside-riyadh/",
             icon: "fas fa-route"
+        },
+        {
+            title: "نقل مكاتب وشركات بالرياض",
+            desc: "نقل احترافي لمقرات العمل والمؤسسات",
+            slug: "office-commercial-moving-riyadh/",
+            icon: "fas fa-building"
         }
     ];
 
@@ -49,7 +55,7 @@ function renderServicesDropdown() {
     let basePath = '/';
     if (window.location.protocol === 'file:') {
         const isBlogArticle = pathname.includes('/blog/') && !pathname.endsWith('/blog/') && !pathname.endsWith('/blog/index.html');
-        const isSubfolder = pathname.includes('/furniture-') || pathname.includes('/blog/') || pathname.includes('/dina-') || pathname.includes('/about/') || pathname.includes('/contact/');
+        const isSubfolder = pathname.includes('/furniture-') || pathname.includes('/blog/') || pathname.includes('/dina-') || pathname.includes('/about/') || pathname.includes('/contact/') || pathname.includes('/areas/') || pathname.includes('/office-');
         basePath = isBlogArticle ? '../../' : (isSubfolder ? '../' : './');
     }
 

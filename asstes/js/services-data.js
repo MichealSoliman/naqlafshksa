@@ -32,6 +32,12 @@ const SITE_SERVICES = [
         desc: "نقل بين المدن مع الضمان",
         slug: "furniture-moving-outside-riyadh/",
         icon: "fas fa-route"
+    },
+    {
+        title: "نقل مكاتب وشركات بالرياض",
+        desc: "نقل احترافي لمقرات العمل والمؤسسات",
+        slug: "office-commercial-moving-riyadh/",
+        icon: "fas fa-building"
     }
 ];
 

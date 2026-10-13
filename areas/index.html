@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+
+    <!-- Primary Meta Tags -->
+    <title>نقل عفش بأحياء الرياض | تغطية شاملة لكافة أحياء ومناطق الرياض - شركة مسار</title>
+    <meta name="description"
+        content="دليل خدمات نقل العفش في كافة أحياء الرياض (شمال، شرق، غرب، جنوب، وسط الرياض). دينا نقل عفش، فك وتركيب، تغليف، وتخزين بالضمان مع وصول سريع لأي حي.">
+    <meta name="keywords"
+        content="نقل عفش احياء الرياض, نقل عفش شمال الرياض, نقل عفش شرق الرياض, نقل عفش غرب الرياض, نقل عفش جنوب الرياض, دينا نقل عفش بالرياض, شركة مسار">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://www.naqlafshksa.com/areas/">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="نقل عفش بأحياء الرياض | تغطية شاملة لجميع أحياء الرياض - شركة مسار">
+    <meta property="og:description"
+        content="خدمات نقل وتغليف وفك وتركيب العفش في كافة أحياء الرياض مع سيارات دينا مجهزة وفنيين متمرسين وضمان شامل ضد الخدش والكسر.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ar_SA">
+    <meta property="og:url" content="https://www.naqlafshksa.com/areas/">
+    <meta property="og:image" content="https://www.naqlafshksa.com/asstes/img/logo.webp">
+    <meta property="og:image:secure_url" content="https://www.naqlafshksa.com/asstes/img/logo.webp">
+    <meta property="og:image:type" content="image/webp">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="نقل عفش بأحياء الرياض - شركة مسار">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="نقل عفش بأحياء الرياض | شركة مسار لنقل العفش">
+    <meta name="twitter:description" content="تغطية متكاملة لجميع أحياء ومناطق الرياض لنقل وتغليف وفك وتركيب الأثاث.">
+    <meta name="twitter:image" content="https://www.naqlafshksa.com/asstes/img/logo.webp">
+
+    <!-- Favicon Icons -->
+    <link rel="icon" type="image/png" href="../favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="../favicon/favicon.svg" />
+    <link rel="shortcut icon" href="../favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="شركة مسار" />
+    <link rel="manifest" href="../favicon/site.webmanifest" />
+
+    <!-- TailwindCSS & Fonts -->
+    <link rel="stylesheet" href="../dist/output.css">
+
+    <!-- Font Awesome (Local) -->
+    <link rel="stylesheet" href="../asstes/css/all.min.css">
+
+    <!-- Local Fonts - Tajawal -->
+    <link rel="stylesheet" href="../asstes/css/fonts.css">
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        * {
+            font-family: 'Tajawal', sans-serif;
+        }
+
+        :root {
+            --primary-color: #153052;
+            --primary-dark: #2d91cf;
+            --secondary-color: #D4AF37;
+            --secondary-dark: #B8960F;
+        }
+
+        .bg-primary {
+            background-color: var(--primary-color);
+        }
+
+        .bg-primary-dark {
+            background-color: var(--primary-dark);
+        }
+
+        .bg-secondary {
+            background-color: var(--secondary-color);
+        }
+
+        .text-primary {
+            color: var(--primary-color);
+        }
+
+        .text-secondary {
+            color: var(--secondary-color);
+        }
+
+        .border-secondary {
+            border-color: var(--secondary-color);
+        }
+
+        .area-card {
+            transition: all 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .area-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 35px -10px rgba(21, 48, 82, 0.18);
+        }
+
+        .category-badge {
+            transition: all 0.3s ease;
+        }
+
+        .category-badge:hover {
+            transform: scale(1.05);
+        }
+
+        .search-input:focus {
+            box-shadow: 0 0 0 4px rgba(212, 175, 55, 0.25);
+        }
+
+        .active-category {
+            background-color: var(--secondary-color) !important;
+            color: var(--primary-color) !important;
+            font-weight: bold;
+        }
+
+        .hero-pattern {
+            background: linear-gradient(135deg, #1e3a5f 0%, #0f2b44 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-pattern::before {
+            content: '';
+            position: absolute;
+            top: -30%;
+            right: -20%;
+            width: 80%;
+            height: 150%;
+            background: rgba(212, 175, 55, 0.08);
+            transform: rotate(25deg);
+            border-radius: 50%;
+        }
+    </style>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#153052',
+                        'primary-dark': '#2d91cf',
+                        secondary: '#D4AF37',
+                        'secondary-dark': '#B8960F',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../asstes/css/style.css">
+</head>
+
+<body class="bg-gray-50 overflow-x-hidden">
+
+    <!-- Floating WhatsApp & Phone Buttons -->
+    <a href="https://wa.me/966539877874?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%AD%D8%AA%D8%A7%D8%AC%20%D8%B9%D8%B1%D8%B6%20%D8%B3%D8%B9%D8%B1%20%D9%84%D9%86%D9%82%D9%84%20%D8%A7%D9%84%D8%B9%D9%81%D8%B4%20%D8%A8%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6"
+        target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="تواصل عبر واتساب">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="tel:0539877874" class="phone-float" aria-label="اتصال هاتفي مباشر">
+        <i class="fas fa-phone-alt"></i>
+    </a>
+
+    <!-- Header / Navigation -->
+    <header id="header"
+        class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-primary/90 shadow-lg transition-all duration-300">
+        <nav class="container mx-auto px-4 lg:px-8 py-3">
+            <div class="flex items-center justify-between">
+
+                <!-- Logo -->
+                <a href="../index.html" class="flex items-center gap-3">
+                    <div
+                        class="bg-white rounded-full h-16 w-16 sm:h-18 sm:w-18 shadow-lg p-2 overflow-hidden flex items-center justify-center border-2 border-secondary hover:scale-105 transition duration-300">
+                        <img src="../asstes/img/logo.webp" alt="شعار شركة مسار لنقل العفش بالرياض" width="72"
+                            height="72" fetchpriority="high" decoding="async"
+                            class="max-w-full max-h-full object-contain">
+                    </div>
+                    <div>
+                        <span class="text-2xl font-bold text-white leading-tight">شركة مسار</span>
+                        <p class="text-sm text-gray-200">لنقل العفش بالرياض</p>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <ul class="hidden lg:flex items-center gap-7 font-medium">
+                    <li><a href="../index.html" class="text-white hover:text-secondary transition">الرئيسية</a></li>
+                    <li><a href="../about/" class="text-white hover:text-secondary transition">من نحن</a></li>
+
+                    <!-- Services Dropdown -->
+                    <li class="relative group">
+                        <a href="../services.html"
+                            class="text-white hover:text-secondary transition flex items-center gap-1.5 py-2">
+                            <span>خدماتنا</span>
+                            <i
+                                class="fas fa-chevron-down text-xs transition-transform duration-300 group-hover:rotate-180"></i>
+                        </a>
+                        <!-- Dropdown Menu -->
+                        <div id="desktop-services-dropdown"
+                            class="desktop-services-dropdown absolute right-0 top-full hidden group-hover:block w-72 bg-white rounded-2xl shadow-2xl py-3 border border-gray-100 text-gray-800 z-50">
+                            <!-- Populated dynamically via main.js -->
+                        </div>
+                    </li>
+
+                    <li><a href="index.html" class="text-secondary font-bold transition">أحياء الرياض</a></li>
+                    <li><a href="../index.html#portfolio" class="text-white hover:text-secondary transition">مشاريعنا</a></li>
+                    <li><a href="../blog/index.html" class="text-white hover:text-secondary transition">المدونة</a></li>
+                    <li><a href="../contact/" class="text-white hover:text-secondary transition">اتصل بنا</a></li>
+
+                    <li>
+                        <a href="tel:0539877874"
+                            class="bg-secondary hover:bg-white hover:text-primary text-white px-6 py-3 rounded-full transition flex items-center gap-2 shadow-md">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>0539877874</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn"
+                    class="lg:hidden text-white text-2xl bg-white/10 w-11 h-11 rounded-full hover:bg-white/20 transition">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div id="mobile-menu"
+                class="lg:hidden hidden mt-4 bg-white rounded-2xl shadow-2xl p-5 border border-gray-100">
+                <ul class="space-y-3 text-center font-medium">
+                    <li><a href="../index.html"
+                            class="block text-primary hover:bg-gray-100 py-3 rounded-xl transition">الرئيسية</a></li>
+
+                    <li><a href="../about/" class="block text-primary hover:bg-gray-100 py-3 rounded-xl transition">من
+                            نحن</a></li>
+
+                    <!-- Mobile Submenu -->
+                    <li class="space-y-1">
+                        <button type="button" onclick="toggleMobileSubmenu(this)"
+                            class="w-full flex items-center justify-between text-primary hover:bg-gray-100 py-3 px-4 rounded-xl transition font-medium">
+                            <span>خدماتنا</span>
+                            <i class="fas fa-chevron-down text-xs transition-transform duration-300"></i>
+                        </button>
+                        <div class="mobile-submenu hidden pr-4 space-y-2 py-2 bg-gray-50 rounded-xl">
+                            <!-- Populated dynamically via main.js -->
+                        </div>
+                    </li>
+
+                    <li><a href="index.html" class="block text-secondary font-bold hover:bg-gray-100 py-3 rounded-xl transition">أحياء الرياض</a></li>
+                    <li><a href="../index.html#portfolio"
+                            class="block text-primary hover:bg-gray-100 py-3 rounded-xl transition">مشاريعنا</a></li>
+                    <li><a href="../blog/index.html"
+                            class="block text-primary hover:bg-gray-100 py-3 rounded-xl transition">المدونة</a></li>
+                    <li><a href="../contact/"
+                            class="block text-primary hover:bg-gray-100 py-3 rounded-xl transition">اتصل بنا</a></li>
+
+                    <li class="pt-2">
+                        <a href="tel:0539877874"
+                            class="block bg-secondary text-white py-3 rounded-full hover:bg-primary transition shadow-md">
+                            <i class="fas fa-phone-alt ml-2"></i>
+                            اتصل الآن
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-pattern text-white pt-36 pb-20 relative">
+        <div class="container mx-auto px-4 text-center relative z-10">
+            <span class="inline-block bg-white/10 text-secondary border border-secondary/30 px-5 py-2 rounded-full text-sm font-bold mb-4" data-aos="fade-down">
+                <i class="fas fa-map-marker-alt ml-2 text-secondary"></i>
+                تغطية جغرافية لكافة أحياء مدينة الرياض
+            </span>
+            <h1 class="text-3xl sm:text-5xl md:text-6xl font-bold mb-6 leading-tight" data-aos="fade-down" data-aos-delay="100">
+                نقل عفش بأحياء الرياض | شركة مسار
+            </h1>
+            <p class="text-lg sm:text-xl md:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto leading-relaxed" data-aos="fade-up" data-aos-delay="200">
+                نوفر سيارات دينا مجهزة وأطقم فك وتركيب وتغليف متمركزة في مختلف أحياء الرياض لضمان الوصول السريع إليك خلال 20 دقيقة وبأفضل الأسعار.
+            </p>
+
+            <!-- Search Bar -->
+            <div class="max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="300">
+                <div class="relative">
+                    <input type="text" id="search-input" placeholder="ابحث باسم الحي (مثال: الملقا، الروضة، الياسمين، السويدي...)"
+                        class="search-input w-full px-6 py-4 pr-14 rounded-full text-gray-800 focus:outline-none text-base sm:text-lg shadow-2xl border-2 border-transparent focus:border-secondary transition">
+                    <i class="fas fa-search absolute right-5 top-1/2 transform -translate-y-1/2 text-primary text-xl"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Region Filters -->
+    <section class="bg-white py-4 shadow-md sticky top-[73px] z-40 border-b border-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap justify-center gap-2 sm:gap-3" id="filters-container">
+                <button class="area-filter active-category px-5 py-2 rounded-full text-sm sm:text-base font-semibold transition-all shadow-sm"
+                    data-region="all">
+                    <i class="fas fa-city ml-1.5"></i> كافة الأحياء (<span id="total-count">30</span>)
+                </button>
+                <button
+                    class="area-filter bg-gray-100 text-gray-700 px-5 py-2 rounded-full text-sm sm:text-base font-semibold hover:bg-secondary hover:text-primary transition-all"
+                    data-region="شمال الرياض">
+                    <i class="fas fa-compass ml-1.5"></i> شمال الرياض
+                </button>
+                <button
+                    class="area-filter bg-gray-100 text-gray-700 px-5 py-2 rounded-full text-sm sm:text-base font-semibold hover:bg-secondary hover:text-primary transition-all"
+                    data-region="شرق الرياض">
+                    <i class="fas fa-compass ml-1.5"></i> شرق الرياض
+                </button>
+                <button
+                    class="area-filter bg-gray-100 text-gray-700 px-5 py-2 rounded-full text-sm sm:text-base font-semibold hover:bg-secondary hover:text-primary transition-all"
+                    data-region="وسط الرياض">
+                    <i class="fas fa-compass ml-1.5"></i> وسط الرياض
+                </button>
+                <button
+                    class="area-filter bg-gray-100 text-gray-700 px-5 py-2 rounded-full text-sm sm:text-base font-semibold hover:bg-secondary hover:text-primary transition-all"
+                    data-region="غرب الرياض">
+                    <i class="fas fa-compass ml-1.5"></i> غرب الرياض
+                </button>
+                <button
+                    class="area-filter bg-gray-100 text-gray-700 px-5 py-2 rounded-full text-sm sm:text-base font-semibold hover:bg-secondary hover:text-primary transition-all"
+                    data-region="جنوب الرياض">
+                    <i class="fas fa-compass ml-1.5"></i> جنوب الرياض
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Areas Cards Grid -->
+    <section class="py-16">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-12">
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8" id="areas-grid">
+                <!-- Cards will be populated by JavaScript & server template below -->
+            </div>
+
+            <!-- No Results Message -->
+            <div id="no-results" class="hidden text-center py-16">
+                <div class="w-20 h-20 bg-gray-200 rounded-full flex items-center justify-center mx-auto mb-4 text-gray-400 text-3xl">
+                    <i class="fas fa-search-location"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-primary mb-2">عفواً، لم نجد نتائج مطابقة لبحثك</h3>
+                <p class="text-gray-600 mb-6">نحن نغطي كافة أحياء الرياض بدون استثناء! تواصل معنا مباشرة لتوجيه أقرب دينا إليك فوراً.</p>
+                <a href="tel:0539877874" class="inline-flex items-center gap-2 bg-primary hover:bg-secondary text-white px-8 py-3.5 rounded-full font-bold transition shadow-lg">
+                    <i class="fas fa-phone-alt"></i> اتصل بنا الآن: 0539877874
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Across Riyadh Section -->
+    <section class="py-16 bg-white border-t border-gray-100">
+        <div class="container mx-auto px-4 text-center max-w-4xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">لماذا يختارنا سكان كافة أحياء الرياض؟</h2>
+            <div class="w-20 h-1 bg-secondary mx-auto mb-8"></div>
+            <div class="grid sm:grid-cols-3 gap-6 text-right">
+                <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100">
+                    <div class="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center text-xl mb-4">
+                        <i class="fas fa-stopwatch"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-primary mb-2">سرعة استجابة استثنائية</h3>
+                    <p class="text-gray-600 text-sm">سيارات دينا موزعة في الميادين والمحاور الرئيسية بالرياض لتقليل مدة الانتظار والوصول إليك خلال 20 دقيقة.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100">
+                    <div class="w-12 h-12 rounded-xl bg-secondary/10 text-secondary flex items-center justify-center text-xl mb-4">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-primary mb-2">ضمان شامل ضد الخدش</h3>
+                    <p class="text-gray-600 text-sm">التزام تام بحماية كافة القطع وتغليفها بخامات بابلز وكرتون ونايلون ممدد لضمان وصول الأثاث دون أدنى تلف.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100">
+                    <div class="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center text-xl mb-4">
+                        <i class="fas fa-hand-holding-usd"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-primary mb-2">أسعار واضحة وتنافسية</h3>
+                    <p class="text-gray-600 text-sm">عروض أسعار شفافة ومحددة مسبقاً دون أي تكاليف خفية، مع توفير خصومات مخصصة للشقق والفلل في الرياض.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-br from-primary to-secondary text-white pt-16 pb-8 px-4 md:px-8 lg:px-16">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-12">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center space-x-3 space-x-reverse mb-6">
+                        <div
+                            class="bg-white rounded-full h-16 w-16 shadow-lg p-2 overflow-hidden flex items-center justify-center border-2 border-secondary">
+                            <img width="72" height="72" decoding="async" src="../asstes/img/logo.webp"
+                                alt="شعار شركة مسار لنقل العفش بالرياض" class="max-w-full max-h-full object-contain">
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold">شركة مسار لنقل العفش</h3>
+                            <p class="text-sm">نقل آمن واحترافي</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-200 leading-relaxed mb-4">
+                        شركة رائدة في مجال نقل وتغليف العفش في المملكة العربية السعودية، نقدم أعلى معايير الجودة
+                        والاحترافية والأمان لعفش عملائنا بكافة أحياء الرياض.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-xl font-bold mb-6">روابط سريعة</h4>
+                    <ul class="space-y-3">
+                        <li><a href="../index.html" class="text-gray-200 hover:text-white transition">الرئيسية</a></li>
+                        <li><a href="../about/" class="text-gray-200 hover:text-white transition">من نحن</a></li>
+                        <li><a href="../services.html" class="text-gray-200 hover:text-white transition">خدماتنا</a></li>
+                        <li><a href="index.html" class="text-secondary font-bold transition">أحياء الرياض</a></li>
+                        <li><a href="../blog/index.html" class="text-gray-200 hover:text-white transition">المدونة</a></li>
+                        <li><a href="../contact/" class="text-gray-200 hover:text-white transition">اتصل بنا</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services Links -->
+                <div>
+                    <h4 class="text-xl font-bold mb-6">خدماتنا الرئيسية</h4>
+                    <ul class="space-y-3">
+                        <li><a href="../furniture-disassembly-and-reassembly-in-riyadh/" class="text-gray-200 hover:text-white transition">فك وتركيب عفش بالرياض</a></li>
+                        <li><a href="../dina-furniture-moving-riyadh/" class="text-gray-200 hover:text-white transition">دينا نقل عفش بالرياض</a></li>
+                        <li><a href="../furniture-packaging-wrapping-riyadh/" class="text-gray-200 hover:text-white transition">تغليف عفش بالرياض</a></li>
+                        <li><a href="../furniture-storage-riyadh/" class="text-gray-200 hover:text-white transition">تخزين عفش بالرياض</a></li>
+                        <li><a href="../furniture-moving-outside-riyadh/" class="text-gray-200 hover:text-white transition">نقل عفش خارج الرياض</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-xl font-bold mb-6">تواصل معنا</h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-phone-alt text-secondary"></i>
+                            <a href="tel:0539877874" class="text-gray-200 hover:text-white">0539877874</a>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fab fa-whatsapp text-green-400"></i>
+                            <a href="https://wa.me/966539877874?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%AD%D8%AA%D8%A7%D8%AC%20%D8%B9%D8%B1%D8%B6%20%D8%B3%D8%B9%D8%B1%20%D9%84%D9%86%D9%82%D9%84%20%D8%A7%D9%84%D8%B9%D9%81%D8%B4%20%D8%A8%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6" target="_blank" class="text-gray-200 hover:text-white">واتساب مباشر 24/7</a>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-map-marker-alt text-secondary"></i>
+                            <span class="text-gray-200">طريق الملك فهد، العليا، الرياض، السعودية</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="border-t border-white/20 pt-8 text-center">
+                <p class="text-gray-200">
+                    &copy; 2026 شركة مسار لنقل العفش بالرياض. جميع الحقوق محفوظة.
+                    <a href="../privacy-policy.html" class="hover:text-white transition">سياسة الخصوصية</a>
+                </p>
+                <p class="text-sm text-gray-300 mt-2">
+                    صُمم وطُور بـ <i class="fas fa-heart text-red-400 animate-pulse"></i> في المملكة العربية السعودية
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Sticky CTA -->
+    <div class="mobile-cta" role="region" aria-label="أزرار التواصل السريع">
+        <a href="tel:0539877874" class="btn-secondary-mobile" aria-label="اتصال هاتفي مباشر">
+            <i class="fas fa-phone-alt"></i>
+            <span>اتصل الآن</span>
+        </a>
+        <a href="https://wa.me/966539877874?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%AD%D8%AA%D8%A7%D8%AC%20%D8%B9%D8%B1%D8%B6%20%D8%B3%D8%B9%D8%B1%20%D9%84%D9%86%D9%82%D9%84%20%D8%A7%D9%84%D8%B9%D9%81%D8%B4%20%D8%A8%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6"
+            target="_blank" rel="noopener noreferrer" class="btn-primary-mobile" aria-label="تواصل فوري عبر واتساب">
+            <i class="fab fa-whatsapp"></i>
+            <span>واتساب مباشر</span>
+        </a>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+    <script src="../asstes/js/services-data.js" defer></script>
+    <script src="../asstes/js/main.js" defer></script>
+
+    <!-- Neighborhoods Data & Interactive Search/Filter Logic -->
+    <script>
+        const neighborhoodsList = [
+            // شمال الرياض
+            { name: "حي الملقا", region: "شمال الرياض", time: "15 دقيقة", desc: "خدمة نقل عفش وفلل فاخرة بحي الملقا مع فك وتركيب غرف النوم وتغليف الأثاث الثمين بأعلى معايير الأمان." },
+            { name: "حي الياسمين", region: "شمال الرياض", time: "15 دقيقة", desc: "دينا نقل عفش مجهزة بحي الياسمين لنقل الشقق والفلل مع أطقم فنية مدربة وسرعة وصول فائقة." },
+            { name: "حي النرجس", region: "شمال الرياض", time: "20 دقيقة", desc: "نقل وتغليف أثاث احترافي بحي النرجس شمال الرياض بأسعار تنافسية مع فك وتركيب المطابخ والمكيفات." },
+            { name: "حي الصحافة", region: "شمال الرياض", time: "15 دقيقة", desc: "أفضل خدمات نقل العفش بحي الصحافة، شاحنات دينا مغلقة ومبطنة لحماية الأثاث من الغبار والخدش." },
+            { name: "حي حطين", region: "شمال الرياض", time: "15 دقيقة", desc: "نقل عفش راقي بحي حطين يشمل تغليف البابلز والكرتون المخصص للمقتنيات الثمينة ونقل الفلل." },
+            { name: "حي العارض", region: "شمال الرياض", time: "20 دقيقة", desc: "نقل عفش سريع بحي العارض مع فنيين لفك وتجميع أثاث إيكيا والميداس والمطابخ باحترافية تامة." },
+            { name: "حي الربيع", region: "شمال الرياض", time: "15 دقيقة", desc: "خدمات نقل أثاث متكاملة بحي الربيع مع سيارات حديثة وسائقين متمرسين وضمان شامل للسلامة." },
+            { name: "حي العقيق", region: "شمال الرياض", time: "15 دقيقة", desc: "دينا نقل عفش بحي العقيق مجهزة لنقل الأثاث المنزلي والمكتبي بأفضل الخامات ومعدات الرفع الحديثة." },
+            { name: "حي الغدير", region: "شمال الرياض", time: "15 دقيقة", desc: "نقل عفش آمن وسريع بحي الغدير مع كادر فني متمرس لفك الأجهزة والمكيفات وإعادة تركيبها بدقة." },
+            { name: "حي النخيل", region: "شمال الرياض", time: "15 دقيقة", desc: "نقل وتغليف أثاث الفلل والقصور بحي النخيل مع باقات تغليف VIP وضمان على سلامة المنقولات." },
+
+            // شرق الرياض
+            { name: "حي الروضة", region: "شرق الرياض", time: "15 دقيقة", desc: "نقل عفش حي الروضة مع سيارات دينا بكافة الأحجام وخدمة فك وتركيب الدواليب والمطابخ بأمان." },
+            { name: "حي اليرموك", region: "شرق الرياض", time: "20 دقيقة", desc: "خدمة نقل عفش سريعة واقتصادية بحي اليرموك شرق الرياض تناسب كافة العائلات والشقق مع الضمان." },
+            { name: "حي المونسية", region: "شرق الرياض", time: "20 دقيقة", desc: "دينا نقل عفش مجهزة بحي المونسية، نجارون وفنيون متخصصون للفك والتركيب والتغليف بأقل الأسعار." },
+            { name: "حي قرطبة", region: "شرق الرياض", time: "15 دقيقة", desc: "نقل عفش متقن بحي قرطبة يشمل حماية وتغليف الأجهزة الكهربائية والمجالس والشاشات الحساسة." },
+            { name: "حي النسيم", region: "شرق الرياض", time: "20 دقيقة", desc: "نقل عفش شقق ومنازل بحي النسيم مع أسطول سيارات دينا متاح على مدار 24 ساعة بأفضل العروض." },
+            { name: "حي الحمراء", region: "شرق الرياض", time: "15 دقيقة", desc: "نقل وتغليف عفش متكامل بحي الحمراء مع التزام دقيق بالمواعيد وضمان سلامة كافة قطع الأثاث." },
+            { name: "حي الروابي", region: "شرق الرياض", time: "20 دقيقة", desc: "خدمة نقل عفش بحي الروابي مع توفير كراتين التعبئة ومواد التغليف المتينة لحماية الأواني والتحف." },
+            { name: "حي الندوة", region: "شرق الرياض", time: "25 دقيقة", desc: "نقل عفش بحي الندوة شرق الرياض مع سيارات نقل مجهزة وطاقم عمل خبير لنقل المنازل والمكاتب." },
+
+            // وسط الرياض
+            { name: "حي العليا", region: "وسط الرياض", time: "15 دقيقة", desc: "نقل عفش وأثاث مكتبي وشركات بحي العليا ووسط الرياض مع تنظيم سريع وتغليف أجهزة إلكترونية متطور." },
+            { name: "حي السليمانية", region: "وسط الرياض", time: "15 دقيقة", desc: "نقل عفش شقق ومنازل بحي السليمانية مع فك وتركيب المكيفات والستائر وغرف النوم بأعلى حرفية." },
+            { name: "حي الملك فهد", region: "وسط الرياض", time: "15 دقيقة", desc: "دينا نقل عفش مجهزة بحي الملك فهد، نجارون محترفون للتعامل مع كافة الموديلات المحلية والعالمية." },
+            { name: "حي الورود", region: "وسط الرياض", time: "15 دقيقة", desc: "خدمة نقل عفش راقية بحي الورود تشمل التغليف المبطن ونقل التحف والزجاج دون أي خدوش." },
+            { name: "حي المروج", region: "وسط الرياض", time: "15 دقيقة", desc: "نقل وتغليف أثاث بحي المروج مع خيارات النقل السريع وأوناش الرفع للأدوار المرتفعة." },
+
+            // غرب الرياض
+            { name: "حي ظهرة لبن", region: "غرب الرياض", time: "20 دقيقة", desc: "نقل عفش بحي ظهرة لبن غرب الرياض، دينا مجهزة وأطقم فك وتركيب خبيرة لخدمة أهالي الحي بأفضل سعر." },
+            { name: "حي السويدي", region: "غرب الرياض", time: "20 دقيقة", desc: "خدمات نقل عفش متكاملة بحي السويدي، نجارون لفك وتجميع المطابخ وغرف النوم بمهارة وأمان." },
+            { name: "حي العريجاء", region: "غرب الرياض", time: "20 دقيقة", desc: "دينا نقل عفش بحي العريجاء مع تغليف شامل بأسعار مميزة وضمان ضد الكسر لنقل الشقق والمنازل." },
+            { name: "حي طويق", region: "غرب الرياض", time: "25 دقيقة", desc: "نقل عفش سريع بحي طويق غرب الرياض مع سيارات حديثة وعمالة مدربة لنقل الأثاث باحترافية." },
+
+            // جنوب الرياض
+            { name: "حي الشفا", region: "جنوب الرياض", time: "25 دقيقة", desc: "نقل عفش بحي الشفا جنوب الرياض مع أسطول سيارات دينا متاح 24 ساعة وأسعار اقتصادية تناسب الجميع." },
+            { name: "حي العزيزية", region: "جنوب الرياض", time: "25 دقيقة", desc: "خدمة نقل وتغليف الأثاث بحي العزيزية مع توفير كراتين وبلاستيك فقاعي لحفظ المنقولات بأمان تام." },
+            { name: "حي الفلاح", region: "شمال الرياض", time: "15 دقيقة", desc: "نقل عفش بحي الفلاح شمال الرياض مع أطقم فنية للفك والتركيب والتغليف وسيارات دينا مقفلة." }
+        ];
+
+        function renderCards(list) {
+            const grid = document.getElementById('areas-grid');
+            const noResults = document.getElementById('no-results');
+
+            if (!list || list.length === 0) {
+                grid.innerHTML = '';
+                noResults.classList.remove('hidden');
+                return;
+            }
+
+            noResults.classList.add('hidden');
+            let html = '';
+
+            list.forEach(item => {
+                const waText = encodeURIComponent(`السلام عليكم، أحتاج عرض سعر لخدمة نقل العفش في ${item.name}`);
+                const waUrl = `https://wa.me/966539877874?text=${waText}`;
+
+                html += `
+                <article class="area-card bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden flex flex-col justify-between"
+                    data-region="${item.region}">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-xs font-bold">
+                                <i class="fas fa-map-pin ml-1 text-secondary"></i> ${item.region}
+                            </span>
+                            <span class="text-xs text-green-700 bg-green-50 px-2.5 py-1 rounded-full font-semibold">
+                                <i class="fas fa-bolt ml-1"></i> وصول: ${item.time}
+                            </span>
+                        </div>
+                        <h2 class="text-xl sm:text-2xl font-bold text-primary mb-3 hover:text-secondary transition">
+                            نقل عفش ${item.name}
+                        </h2>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-5">
+                            ${item.desc}
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs bg-gray-100 text-gray-700 px-2.5 py-1 rounded-lg"><i class="fas fa-check text-secondary ml-1"></i> دينا مجهزة</span>
+                            <span class="text-xs bg-gray-100 text-gray-700 px-2.5 py-1 rounded-lg"><i class="fas fa-check text-secondary ml-1"></i> فك وتركيب</span>
+                            <span class="text-xs bg-gray-100 text-gray-700 px-2.5 py-1 rounded-lg"><i class="fas fa-check text-secondary ml-1"></i> تغليف بابلز</span>
+                            <span class="text-xs bg-gray-100 text-gray-700 px-2.5 py-1 rounded-lg"><i class="fas fa-check text-secondary ml-1"></i> ضمان شامل</span>
+                        </div>
+                    </div>
+                    <div class="p-4 bg-gray-50 border-t border-gray-100 flex items-center gap-2">
+                        <a href="tel:0539877874"
+                            class="flex-1 bg-primary hover:bg-primary/90 text-white text-center py-2.5 px-3 rounded-xl font-bold text-sm transition flex items-center justify-center gap-1.5 shadow-sm">
+                            <i class="fas fa-phone-alt text-xs"></i> اتصل الآن
+                        </a>
+                        <a href="${waUrl}" target="_blank" rel="noopener noreferrer"
+                            class="flex-1 bg-[#25D366] hover:bg-[#20ba5a] text-white text-center py-2.5 px-3 rounded-xl font-bold text-sm transition flex items-center justify-center gap-1.5 shadow-sm">
+                            <i class="fab fa-whatsapp"></i> واتساب
+                        </a>
+                    </div>
+                </article>
+                `;
+            });
+
+            grid.innerHTML = html;
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            if (typeof AOS !== 'undefined') {
+                AOS.init({ duration: 900, once: true });
+            }
+
+            renderCards(neighborhoodsList);
+
+            // Filter Buttons
+            const filterBtns = document.querySelectorAll('.area-filter');
+            const searchInput = document.getElementById('search-input');
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    filterBtns.forEach(b => {
+                        b.classList.remove('active-category', 'bg-secondary', 'text-primary');
+                        b.classList.add('bg-gray-100', 'text-gray-700');
+                    });
+                    btn.classList.add('active-category', 'bg-secondary', 'text-primary');
+                    btn.classList.remove('bg-gray-100', 'text-gray-700');
+
+                    const selectedRegion = btn.dataset.region;
+                    const searchTerm = searchInput.value.trim().toLowerCase();
+
+                    filterList(selectedRegion, searchTerm);
+                });
+            });
+
+            // Search Input
+            searchInput.addEventListener('input', (e) => {
+                const searchTerm = e.target.value.trim().toLowerCase();
+                const activeBtn = document.querySelector('.area-filter.active-category');
+                const selectedRegion = activeBtn ? activeBtn.dataset.region : 'all';
+
+                filterList(selectedRegion, searchTerm);
+            });
+
+            function filterList(region, term) {
+                const filtered = neighborhoodsList.filter(item => {
+                    const matchRegion = (region === 'all' || item.region === region);
+                    const matchTerm = (!term || item.name.toLowerCase().includes(term) || item.desc.toLowerCase().includes(term) || item.region.toLowerCase().includes(term));
+                    return matchRegion && matchTerm;
+                });
+                renderCards(filtered);
+            }
+        });
+    </script>
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "الرئيسية", "item": "https://www.naqlafshksa.com/" },
+            { "@type": "ListItem", "position": 2, "name": "أحياء الرياض", "item": "https://www.naqlafshksa.com/areas/" }
+        ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "@id": "https://www.naqlafshksa.com/areas/#itemlist",
+        "name": "تغطية خدمات نقل العفش بأحياء الرياض",
+        "description": "دليل خدمات نقل الأثاث في كافة أحياء شمال وشرق وغرب وجنوب ووسط الرياض مع شركة مسار.",
+        "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "نقل عفش حي الملقا", "url": "https://www.naqlafshksa.com/areas/" },
+            { "@type": "ListItem", "position": 2, "name": "نقل عفش حي الياسمين", "url": "https://www.naqlafshksa.com/areas/" },
+            { "@type": "ListItem", "position": 3, "name": "نقل عفش حي النرجس", "url": "https://www.naqlafshksa.com/areas/" },
+            { "@type": "ListItem", "position": 4, "name": "نقل عفش حي الروضة", "url": "https://www.naqlafshksa.com/areas/" },
+            { "@type": "ListItem", "position": 5, "name": "نقل عفش حي المونسية", "url": "https://www.naqlafshksa.com/areas/" },
+            { "@type": "ListItem", "position": 6, "name": "نقل عفش حي العليا", "url": "https://www.naqlafshksa.com/areas/" },
+            { "@type": "ListItem", "position": 7, "name": "نقل عفش حي ظهرة لبن", "url": "https://www.naqlafshksa.com/areas/" },
+            { "@type": "ListItem", "position": 8, "name": "نقل عفش حي الشفا", "url": "https://www.naqlafshksa.com/areas/" }
+        ]
+    }
+    </script>
+</body>
+
+</html>
