@@ -35,13 +35,23 @@ function renderServicesDropdown() {
             desc: "مستودعات مؤمنة ومكيفة",
             slug: "furniture-storage-riyadh/",
             icon: "fas fa-warehouse"
+        },
+        {
+            title: "نقل عفش خارج الرياض",
+            desc: "نقل بين المدن مع الضمان",
+            slug: "furniture-moving-outside-riyadh/",
+            icon: "fas fa-route"
         }
     ];
 
-    // تحديد مسار البداية حسب مكان الصفحة (في المجلد الرئيسي أم مجلد فرعي)
-    const pathname = window.location.pathname;
-    const isSubfolder = pathname.includes('/furniture-') || pathname.includes('/blog/') || pathname.includes('/dina-');
-    const basePath = isSubfolder ? '../' : './';
+    // تحديد مسار البداية بدقة لمنع أخطاء 404 سواء على الخادم المباشر أو المعاينة المحلية
+    const pathname = window.location.pathname.replace(/\\/g, '/');
+    let basePath = '/';
+    if (window.location.protocol === 'file:') {
+        const isBlogArticle = pathname.includes('/blog/') && !pathname.endsWith('/blog/') && !pathname.endsWith('/blog/index.html');
+        const isSubfolder = pathname.includes('/furniture-') || pathname.includes('/blog/') || pathname.includes('/dina-') || pathname.includes('/about/') || pathname.includes('/contact/');
+        basePath = isBlogArticle ? '../../' : (isSubfolder ? '../' : './');
+    }
 
     // القوائم لسطح المكتب والموبايل
     const desktopContainers = document.querySelectorAll('.desktop-services-dropdown, #desktop-services-dropdown, [data-services-dropdown]');

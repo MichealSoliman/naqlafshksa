@@ -1694,11 +1694,7 @@
             setupFeatureCardsLight();
 
             // Initialize AOS
-            AOS.init({
-                duration: 1000,
-                once: false,
-                mirror: true
-            });
+            if (typeof AOS !== 'undefined' && !window.__aosInitDone) { AOS.init({ duration: 1000, once: true }); window.__aosInitDone = true; }
         });
 
         function createFloatingParticlesLight() {
@@ -2958,11 +2954,7 @@
         });
 
         // Initialize AOS
-        AOS.init({
-            duration: 1000,
-            once: true,
-            offset: 100
-        });
+        if (typeof AOS !== 'undefined' && !window.__aosInitDone) { AOS.init({ duration: 1000, once: true }); window.__aosInitDone = true; }
     </script>
 
 
@@ -3371,10 +3363,7 @@
         });
 
         // Initialize animations
-        AOS.init({
-            duration: 1000,
-            once: true
-        });
+        if (typeof AOS !== 'undefined' && !window.__aosInitDone) { AOS.init({ duration: 1000, once: true }); window.__aosInitDone = true; }
     </script>
 
     <!-- Footer -->

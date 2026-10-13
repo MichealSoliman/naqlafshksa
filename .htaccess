@@ -5,11 +5,8 @@
     RewriteEngine On
     RewriteBase /
 
-    # Redirect HTTP to HTTPS
-    RewriteCond %{HTTPS} off
-    RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
-
-    # Redirect non-www to www (enforcing www.naqlafshksa.com)
+    # Combined single 301 redirect: HTTP or non-www -> https://www.naqlafshksa.com/
+    RewriteCond %{HTTPS} off [OR]
     RewriteCond %{HTTP_HOST} ^naqlafshksa\.com$ [NC]
     RewriteRule ^(.*)$ https://www.naqlafshksa.com/$1 [R=301,L]
 </IfModule>

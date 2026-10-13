@@ -26,6 +26,12 @@ const SITE_SERVICES = [
         desc: "مستودعات مؤمنة ومكيفة",
         slug: "furniture-storage-riyadh/",
         icon: "fas fa-warehouse"
+    },
+    {
+        title: "نقل عفش خارج الرياض",
+        desc: "نقل بين المدن مع الضمان",
+        slug: "furniture-moving-outside-riyadh/",
+        icon: "fas fa-route"
     }
 ];
 
