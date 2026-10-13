@@ -54,9 +54,10 @@ function renderServicesDropdown() {
     const pathname = window.location.pathname.replace(/\\/g, '/');
     let basePath = '/';
     if (window.location.protocol === 'file:') {
-        const isBlogArticle = pathname.includes('/blog/') && !pathname.endsWith('/blog/') && !pathname.endsWith('/blog/index.html');
+        const isNestedPage = (pathname.includes('/blog/') && !pathname.endsWith('/blog/') && !pathname.endsWith('/blog/index.html')) ||
+                             (pathname.includes('/areas/') && !pathname.endsWith('/areas/') && !pathname.endsWith('/areas/index.html'));
         const isSubfolder = pathname.includes('/furniture-') || pathname.includes('/blog/') || pathname.includes('/dina-') || pathname.includes('/about/') || pathname.includes('/contact/') || pathname.includes('/areas/') || pathname.includes('/office-');
-        basePath = isBlogArticle ? '../../' : (isSubfolder ? '../' : './');
+        basePath = isNestedPage ? '../../' : (isSubfolder ? '../' : './');
     }
 
     // القوائم لسطح المكتب والموبايل

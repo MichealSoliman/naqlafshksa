@@ -487,7 +487,7 @@
     <script>
         const neighborhoodsList = [
             // شمال الرياض
-            { name: "حي الملقا", region: "شمال الرياض", time: "15 دقيقة", desc: "خدمة نقل عفش وفلل فاخرة بحي الملقا مع فك وتركيب غرف النوم وتغليف الأثاث الثمين بأعلى معايير الأمان." },
+            { name: "حي الملقا", region: "شمال الرياض", time: "15 دقيقة", desc: "خدمة نقل عفش وفلل فاخرة بحي الملقا مع فك وتركيب غرف النوم وتغليف الأثاث الثمين بأعلى معايير الأمان.", slug: "furniture-moving-hayu-almalqa-riyadh/" },
             { name: "حي الياسمين", region: "شمال الرياض", time: "15 دقيقة", desc: "دينا نقل عفش مجهزة بحي الياسمين لنقل الشقق والفلل مع أطقم فنية مدربة وسرعة وصول فائقة." },
             { name: "حي النرجس", region: "شمال الرياض", time: "20 دقيقة", desc: "نقل وتغليف أثاث احترافي بحي النرجس شمال الرياض بأسعار تنافسية مع فك وتركيب المطابخ والمكيفات." },
             { name: "حي الصحافة", region: "شمال الرياض", time: "15 دقيقة", desc: "أفضل خدمات نقل العفش بحي الصحافة، شاحنات دينا مغلقة ومبطنة لحماية الأثاث من الغبار والخدش." },
@@ -557,11 +557,12 @@
                             </span>
                         </div>
                         <h2 class="text-xl sm:text-2xl font-bold text-primary mb-3 hover:text-secondary transition">
-                            نقل عفش ${item.name}
+                            ${item.slug ? `<a href="${item.slug}">نقل عفش ${item.name}</a>` : `نقل عفش ${item.name}`}
                         </h2>
-                        <p class="text-gray-600 text-sm leading-relaxed mb-5">
+                        <p class="text-gray-600 text-sm leading-relaxed mb-4">
                             ${item.desc}
                         </p>
+                        ${item.slug ? `<div class="mb-4"><a href="${item.slug}" class="inline-flex items-center gap-1.5 text-xs text-secondary font-bold hover:underline bg-secondary/10 px-3 py-1.5 rounded-lg"><i class="fas fa-file-alt"></i> قراءة تفاصيل الخدمة في ${item.name} &larr;</a></div>` : ''}
                         <div class="flex flex-wrap gap-2 mb-4">
                             <span class="text-xs bg-gray-100 text-gray-700 px-2.5 py-1 rounded-lg"><i class="fas fa-check text-secondary ml-1"></i> دينا مجهزة</span>
                             <span class="text-xs bg-gray-100 text-gray-700 px-2.5 py-1 rounded-lg"><i class="fas fa-check text-secondary ml-1"></i> فك وتركيب</span>
@@ -653,7 +654,7 @@
         "name": "تغطية خدمات نقل العفش بأحياء الرياض",
         "description": "دليل خدمات نقل الأثاث في كافة أحياء شمال وشرق وغرب وجنوب ووسط الرياض مع شركة مسار.",
         "itemListElement": [
-            { "@type": "ListItem", "position": 1, "name": "نقل عفش حي الملقا", "url": "https://www.naqlafshksa.com/areas/" },
+            { "@type": "ListItem", "position": 1, "name": "نقل عفش حي الملقا", "url": "https://www.naqlafshksa.com/areas/furniture-moving-hayu-almalqa-riyadh/" },
             { "@type": "ListItem", "position": 2, "name": "نقل عفش حي الياسمين", "url": "https://www.naqlafshksa.com/areas/" },
             { "@type": "ListItem", "position": 3, "name": "نقل عفش حي النرجس", "url": "https://www.naqlafshksa.com/areas/" },
             { "@type": "ListItem", "position": 4, "name": "نقل عفش حي الروضة", "url": "https://www.naqlafshksa.com/areas/" },
