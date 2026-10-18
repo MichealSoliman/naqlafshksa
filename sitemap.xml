@@ -7,7 +7,7 @@
     <!-- Homepage -->
     <url>
         <loc>https://www.naqlafshksa.com/</loc>
-        <lastmod>2026-10-13</lastmod>
+        <lastmod>2026-10-18</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.00</priority>
     </url>
@@ -32,7 +32,7 @@
         <priority>0.80</priority>
     </url>
 
-     <!-- Blog areas -->
+    <!-- Areas -->
     <url>
         <loc>https://www.naqlafshksa.com/areas/</loc>
         <lastmod>2026-10-13</lastmod>
@@ -103,7 +103,7 @@
     </url>
     <url>
         <loc>https://www.naqlafshksa.com/services.html</loc>
-        <lastmod>2026-10-13</lastmod>
+        <lastmod>2026-10-18</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.80</priority>
     </url>

@@ -1,30 +1,49 @@
-# Apache Configuration File for شركة نقل عفش (naqlafshksa.com)
+# Apache Configuration File for شركة مسار لنقل العفش بالرياض (naqlafshksa.com)
+# Optimized for Technical SEO, Security, and Core Web Vitals
 
-# Enable Rewrite Engine
+# 1. Disable Directory Browsing (Security & Information Disclosure Prevention)
+Options -Indexes
+
+# 2. Block Access to Hidden & Sensitive Files
+<FilesMatch "(^\.|\.(bak|config|dist|fla|inc|ini|log|psd|sh|sql|sw[op])|package(-lock)?\.json)$">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order allow,deny
+        Deny from all
+    </IfModule>
+</FilesMatch>
+
+# 3. URL Rewriting & Canonicalization
 <IfModule mod_rewrite.c>
     RewriteEngine On
     RewriteBase /
 
-    # Combined single 301 redirect: HTTP or non-www -> https://www.naqlafshksa.com/
+    # A. Canonical Domain & Protocol: Force HTTPS and www in a single 301 redirect
     RewriteCond %{HTTPS} off [OR]
     RewriteCond %{HTTP_HOST} ^naqlafshksa\.com$ [NC]
     RewriteRule ^(.*)$ https://www.naqlafshksa.com/$1 [R=301,L]
+
+    # B. Canonicalize /index.html -> / (prevents duplicate homepage/directory indexing)
+    RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /(.*)index\.html\ HTTP/ [NC]
+    RewriteRule ^(.*)index\.html$ https://www.naqlafshksa.com/$1 [R=301,L]
 </IfModule>
 
-# Custom 404 Error Page
+# 4. Custom 404 Error Page
 ErrorDocument 404 /404.html
 
-# Enable Gzip / Brotli Compression for Performance
+# 5. Gzip Compression for Text, Code & Vector Assets
 <IfModule mod_deflate.c>
-    # Compress HTML, CSS, JavaScript, Text, XML and fonts
-    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/x-javascript application/json application/xml application/rss+xml image/svg+xml font/ttf font/otf font/woff font/woff2 application/vnd.ms-fontobject
+    # Compress HTML, CSS, JavaScript, Text, XML and Fonts (Excluding woff2 which is pre-compressed)
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/x-javascript application/json application/xml application/rss+xml image/svg+xml font/ttf font/otf font/woff application/vnd.ms-fontobject
 </IfModule>
 
-# Cache-Control & Expires Headers for Maximum Performance
+# 6. Browser Caching via mod_expires
 <IfModule mod_expires.c>
     ExpiresActive On
     ExpiresDefault "access plus 1 month"
-    
+
     # Images & Favicons
     ExpiresByType image/jpg "access plus 1 year"
     ExpiresByType image/jpeg "access plus 1 year"
@@ -34,12 +53,12 @@ ErrorDocument 404 /404.html
     ExpiresByType image/avif "access plus 1 year"
     ExpiresByType image/svg+xml "access plus 1 year"
     ExpiresByType image/x-icon "access plus 1 year"
-    
+
     # CSS and JavaScript
     ExpiresByType text/css "access plus 1 year"
     ExpiresByType application/javascript "access plus 1 year"
     ExpiresByType text/javascript "access plus 1 year"
-    
+
     # Web Fonts
     ExpiresByType font/ttf "access plus 1 year"
     ExpiresByType font/otf "access plus 1 year"
@@ -48,23 +67,25 @@ ErrorDocument 404 /404.html
     ExpiresByType application/font-woff "access plus 1 year"
 </IfModule>
 
+# 7. HTTP Headers for Performance & Security
 <IfModule mod_headers.c>
-    # Leverage Browser Caching via Cache-Control
-    <FilesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|webp|avif|js|css|swf|svg|ttf|otf|woff|woff2)$">
+    # Cache-Control Headers for Static Assets
+    <FilesMatch "\.(ico|pdf|jpg|jpeg|png|gif|webp|avif|js|css|svg|ttf|otf|woff|woff2)$">
         Header set Cache-Control "max-age=31536000, public, immutable"
     </FilesMatch>
-    
+
+    # Cache-Control for HTML documents
     <FilesMatch "\.(html|htm)$">
         Header set Cache-Control "max-age=3600, private, must-revalidate"
     </FilesMatch>
 
-    # Security & Performance Headers
+    # Security Headers
     Header set X-Content-Type-Options "nosniff"
     Header set X-Frame-Options "SAMEORIGIN"
     Header set X-XSS-Protection "1; mode=block"
     Header set Referrer-Policy "strict-origin-when-cross-origin"
+    Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
 </IfModule>
 
-# UTF-8 Encoding Standard
+# 8. Character Encoding Standard
 AddDefaultCharset UTF-8
-
