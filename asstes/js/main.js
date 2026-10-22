@@ -25,6 +25,12 @@ function renderServicesDropdown() {
             icon: "fas fa-truck"
         },
         {
+            title: "ونيت نقل عفش بالرياض",
+            desc: "نقل سريع للأحمال الخفيفة والأغراض الفردية",
+            slug: "wanet-furniture-moving-riyadh/",
+            icon: "fas fa-truck-pickup"
+        },
+        {
             title: "تغليف العفش بالرياض",
             desc: "حماية ضد الخدوش والكسر",
             slug: "furniture-packaging-wrapping-riyadh/",
@@ -56,7 +62,7 @@ function renderServicesDropdown() {
     if (window.location.protocol === 'file:') {
         const isNestedPage = (pathname.includes('/blog/') && !pathname.endsWith('/blog/') && !pathname.endsWith('/blog/index.html')) ||
                              (pathname.includes('/areas/') && !pathname.endsWith('/areas/') && !pathname.endsWith('/areas/index.html'));
-        const isSubfolder = pathname.includes('/furniture-') || pathname.includes('/blog/') || pathname.includes('/dina-') || pathname.includes('/about/') || pathname.includes('/contact/') || pathname.includes('/areas/') || pathname.includes('/office-');
+        const isSubfolder = pathname.includes('/furniture-') || pathname.includes('/blog/') || pathname.includes('/dina-') || pathname.includes('/wanet-') || pathname.includes('/about/') || pathname.includes('/contact/') || pathname.includes('/areas/') || pathname.includes('/office-');
         basePath = isNestedPage ? '../../' : (isSubfolder ? '../' : './');
     }
 

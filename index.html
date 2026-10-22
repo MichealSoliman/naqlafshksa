@@ -53,6 +53,24 @@
     <meta name="apple-mobile-web-app-title" content="شركة مسار" />
     <link rel="manifest" href="./favicon/site.webmanifest" />
 
+    <!-- Geo / Local SEO Meta Tags -->
+    <meta name="geo.region" content="SA-01">
+    <meta name="geo.placename" content="الرياض">
+    <meta name="geo.position" content="24.713552;46.675295">
+    <meta name="ICBM" content="24.713552, 46.675295">
+    <meta name="theme-color" content="#153052">
+
+    <!-- Preconnect / DNS-Prefetch for External Resources -->
+    <link rel="preconnect" href="https://www.google.com">
+    <link rel="dns-prefetch" href="https://www.google.com">
+    <link rel="dns-prefetch" href="https://maps.googleapis.com">
+    <link rel="dns-prefetch" href="https://wa.me">
+
+    <!-- Preload Critical Fonts for Fast Text Rendering & LCP -->
+    <link rel="preload" href="./asstes/fonts/Tajawal-Bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./asstes/fonts/Tajawal-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./asstes/fonts/Tajawal-Medium.woff2" as="font" type="font/woff2" crossorigin>
+
     <!-- TailwindCSS -->
     <link rel="stylesheet" href="./dist/output.css">
 
@@ -147,6 +165,17 @@
                                     <div class="text-xs text-gray-500">شاحنات مجهزة بحمولات متنوعة</div>
                                 </div>
                             </a>
+                            <a href="./wanet-furniture-moving-riyadh/"
+                                class="flex items-center gap-3 px-5 py-3 hover:bg-blue-50 hover:text-secondary transition font-medium text-right border-b border-gray-50">
+                                <div
+                                    class="w-8 h-8 rounded-lg bg-secondary/10 flex items-center justify-center text-secondary">
+                                    <i class="fas fa-truck-pickup text-sm"></i>
+                                </div>
+                                <div>
+                                    <div class="font-bold text-sm text-[#153052]">ونيت نقل عفش بالرياض</div>
+                                    <div class="text-xs text-gray-500">نقل سريع للأغراض الفردية والكراتين</div>
+                                </div>
+                            </a>
                             <a href="./furniture-packaging-wrapping-riyadh/"
                                 class="flex items-center gap-3 px-5 py-3 hover:bg-blue-50 hover:text-secondary transition font-medium text-right border-b border-gray-50">
                                 <div
@@ -234,6 +263,10 @@
                             <a href="./dina-furniture-moving-riyadh/"
                                 class="block text-gray-700 hover:text-secondary text-right text-sm py-2 px-3">
                                 <i class="fas fa-truck ml-2 text-secondary"></i> دينا نقل عفش بالرياض
+                            </a>
+                            <a href="./wanet-furniture-moving-riyadh/"
+                                class="block text-gray-700 hover:text-secondary text-right text-sm py-2 px-3">
+                                <i class="fas fa-truck-pickup ml-2 text-secondary"></i> ونيت نقل عفش بالرياض
                             </a>
                             <a href="./furniture-packaging-wrapping-riyadh/"
                                 class="block text-gray-700 hover:text-secondary text-right text-sm py-2 px-3">
@@ -2614,6 +2647,7 @@
                                 class="map-visualization relative h-[400px] overflow-hidden rounded-b-2xl border border-gray-200">
                                 <!-- Google Map iframe -->
                                 <iframe
+                                    title="خريطة تغطية خدمات نقل العفش في أحياء الرياض - شركة مسار"
                                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d362362.4733393026!2d46.3878479!3d24.7241507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2ee27cf294aa8f%3A0xa46b8dacf6a80ee!2z2KfZhNmF2YTYsdin2YUg2KfZhNmF2K3Yp9ix2KfZhQ!5e0!3m2!1sar!2ssa!4v1700000000000"
                                     width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
                                     class="absolute inset-0 w-full h-full">
@@ -3377,7 +3411,7 @@
                     <div class="flex items-center space-x-3 space-x-reverse mb-6">
                         <div
                             class="bg-white rounded-full h-16 w-16 sm:h-18 sm:w-18 shadow-lg p-2 overflow-hidden flex items-center justify-center border-2 border-secondary hover:scale-105 transition duration-300">
-                            <img width="72" height="72" decoding="async" src="./asstes/img/logo.webp"
+                            <img width="72" height="72" loading="lazy" decoding="async" src="./asstes/img/logo.webp"
                                 alt="شعار شركة مسار لنقل العفش بالرياض" class="max-w-full max-h-full object-contain">
                         </div>
                         <div>
@@ -3434,6 +3468,9 @@
                         <li><a href="./dina-furniture-moving-riyadh/"
                                 class="text-gray-200 hover:text-white hover:mr-2 transition-all duration-300 inline-block">دينا
                                 نقل عفش بالرياض</a></li>
+                        <li><a href="./wanet-furniture-moving-riyadh/"
+                                class="text-gray-200 hover:text-white hover:mr-2 transition-all duration-300 inline-block">ونيت
+                                نقل عفش بالرياض</a></li>
                         <li><a href="./furniture-packaging-wrapping-riyadh/"
                                 class="text-gray-200 hover:text-white hover:mr-2 transition-all duration-300 inline-block">تغليف
                                 عفش بالرياض</a></li>
@@ -3452,6 +3489,7 @@
                     <p class="text-gray-200 mb-4">خدمات متكاملة بنطاق مدينة الرياض</p>
 
                     <iframe
+                        title="موقع شركة مسار لنقل العفش بالرياض على خرائط جوجل"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3624.837983982045!2d46.67529531500032!3d24.71355198409114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f038f6ed1b9ef%3A0x7a4c2a68f1bbd4c1!2sRiyadh%2C%20Saudi%20Arabia!5e0!3m2!1sen!2seg!4v1697047634567!5m2!1sen!2seg"
                         class="w-full h-80 rounded-xl shadow-lg" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade">
@@ -3512,7 +3550,9 @@
           "telephone": "+966539877874",
           "email": "info@naqlafshksa.com",
           "priceRange": "$$",
-          "description": "شركة مسار لنقل العفش بالرياض توفر خدمات متكاملة في نقل الأثاث المنزلي والمكتبي مع الفك والتركيب والتغليف داخل الرياض وسيارات دينا مجهزة.",
+          "currenciesAccepted": "SAR",
+          "paymentAccepted": "Cash, Credit Card, Bank Transfer, Mada",
+          "description": "شركة مسار لنقل العفش بالرياض توفر خدمات متكاملة في نقل الأثاث المنزلي والمكتبي مع الفك والتركيب والتغليف داخل الرياض وسيارات دينا وونيت مجهزة.",
           "address": {
             "@type": "PostalAddress",
             "streetAddress": "طريق الملك فهد، العليا",
@@ -3544,7 +3584,28 @@
             {
               "@type": "City",
               "name": "الرياض"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "منطقة الرياض"
             }
+          ],
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "520",
+            "bestRating": "5",
+            "worstRating": "1"
+          },
+          "knowsAbout": [
+            "نقل عفش بالرياض",
+            "دينا نقل عفش بالرياض",
+            "ونيت نقل عفش بالرياض",
+            "فك وتركيب غرف نوم",
+            "تغليف اثاث بالرياض",
+            "تخزين اثاث بالرياض",
+            "نقل اثاث بين المدن",
+            "نقل مكاتب بالرياض"
           ],
           "hasOfferCatalog": {
             "@type": "OfferCatalog",
@@ -3554,42 +3615,81 @@
                 "@type": "Offer",
                 "itemOffered": {
                   "@type": "Service",
-                  "name": "نقل عفش بالرياض"
+                  "name": "نقل عفش بالرياض",
+                  "url": "https://www.naqlafshksa.com/",
+                  "description": "خدمات نقل الأثاث المتكاملة للفلل والشقق والمكاتب داخل أحياء الرياض."
                 }
               },
               {
                 "@type": "Offer",
                 "itemOffered": {
                   "@type": "Service",
-                  "name": "فك وتركيب اثاث بالرياض"
+                  "name": "دينا نقل عفش بالرياض",
+                  "url": "https://www.naqlafshksa.com/dina-furniture-moving-riyadh/",
+                  "description": "شاحنات دينا مغلقة ومجهزة بأحجام مختلفة لنقل الأثاث بأمان تام في الرياض."
                 }
               },
               {
                 "@type": "Offer",
                 "itemOffered": {
                   "@type": "Service",
-                  "name": "تغليف اثاث بالرياض"
+                  "name": "ونيت نقل عفش بالرياض",
+                  "url": "https://www.naqlafshksa.com/wanet-furniture-moving-riyadh/",
+                  "description": "ونيت توصيل سريع للأغراض الفردية والأحمال الخفيفة والكراتين في أحياء الرياض."
                 }
               },
               {
                 "@type": "Offer",
                 "itemOffered": {
                   "@type": "Service",
-                  "name": "تخزين اثاث بالرياض"
+                  "name": "فك وتركيب اثاث بالرياض",
+                  "url": "https://www.naqlafshksa.com/furniture-disassembly-and-reassembly-in-riyadh/",
+                  "description": "نجارون متخصصون لفك وتركيب غرف النوم ودواليب ايكيا والمطابخ والمكيفات."
                 }
               },
               {
                 "@type": "Offer",
                 "itemOffered": {
                   "@type": "Service",
-                  "name": "نقل مكاتب بالرياض"
+                  "name": "تغليف اثاث بالرياض",
+                  "url": "https://www.naqlafshksa.com/furniture-packaging-wrapping-riyadh/",
+                  "description": "تغليف عالي الجودة بالبابلز والكرتون المقوى والنايلون لحماية العفش من الخدوش."
                 }
               },
               {
                 "@type": "Offer",
                 "itemOffered": {
                   "@type": "Service",
-                  "name": "ونش رفع اثاث بالرياض"
+                  "name": "تخزين اثاث بالرياض",
+                  "url": "https://www.naqlafshksa.com/furniture-storage-riyadh/",
+                  "description": "مستودعات تخزين عفش مكيفة ومؤمنة بكاميرات مراقبة على مدار 24 ساعة."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "نقل عفش خارج الرياض",
+                  "url": "https://www.naqlafshksa.com/furniture-moving-outside-riyadh/",
+                  "description": "شحن ونقل الأثاث من الرياض إلى كافة مدن ومحافظات المملكة مع الضمان الشامل."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "نقل مكاتب وشركات بالرياض",
+                  "url": "https://www.naqlafshksa.com/office-commercial-moving-riyadh/",
+                  "description": "نقل عفش المكاتب والمؤسسات والشركات مع الترقيم وتغليف الأجهزة الحساسة."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "ونش رفع اثاث بالرياض",
+                  "url": "https://www.naqlafshksa.com/contact/",
+                  "description": "أوناش ورافعات هيدروليكية لرفع الأثاث الثقيل للأدوار المرتفعة والمداخل الضيقة."
                 }
               }
             ]
@@ -3600,11 +3700,41 @@
           "@id": "https://www.naqlafshksa.com/#website",
           "url": "https://www.naqlafshksa.com/",
           "name": "شركة مسار لنقل العفش بالرياض",
-          "description": "شركة مسار لنقل العفش بالرياض - خدمات فك ونقل وتركيب وتخزين الأثاث",
+          "alternateName": "مسار لنقل العفش",
+          "description": "شركة مسار لنقل العفش بالرياض - خدمات فك ونقل وتركيب وتخزين الأثاث داخل وخارج الرياض بأفضل الأسعار وأحدث السيارات المجهزة.",
           "publisher": {
             "@id": "https://www.naqlafshksa.com/#organization"
           },
-          "inLanguage": "ar"
+          "inLanguage": "ar-SA"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.naqlafshksa.com/#webpage",
+          "url": "https://www.naqlafshksa.com/",
+          "name": "نقل عفش بالرياض | شركة مسار لنقل العفش",
+          "description": "تحتاج نقل عفش بالرياض؟ تقدم شركة مسار خدمات نقل الأثاث مع إمكانية الفك والتركيب والتغليف حسب احتياجاتك. تواصل معنا لطلب عرض سعر.",
+          "isPartOf": {
+            "@id": "https://www.naqlafshksa.com/#website"
+          },
+          "about": {
+            "@id": "https://www.naqlafshksa.com/#organization"
+          },
+          "inLanguage": "ar-SA",
+          "breadcrumb": {
+            "@id": "https://www.naqlafshksa.com/#breadcrumb"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://www.naqlafshksa.com/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "الرئيسية",
+              "item": "https://www.naqlafshksa.com/"
+            }
+          ]
         },
         {
           "@type": "FAQPage",

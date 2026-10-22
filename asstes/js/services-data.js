@@ -16,6 +16,12 @@ const SITE_SERVICES = [
         icon: "fas fa-truck"
     },
     {
+        title: "ونيت نقل عفش بالرياض",
+        desc: "نقل سريع للأحمال الخفيفة والأغراض الفردية",
+        slug: "wanet-furniture-moving-riyadh/",
+        icon: "fas fa-truck-pickup"
+    },
+    {
         title: "تغليف العفش بالرياض",
         desc: "حماية ضد الخدوش والكسر",
         slug: "furniture-packaging-wrapping-riyadh/",
