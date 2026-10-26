@@ -70,7 +70,8 @@
             { title: "تغليف العفش الاحترافي", slug: "furniture-packaging-wrapping-riyadh/", icon: "fas fa-box-open", badge: "حماية" },
             { title: "تخزين عفش بمستودعات مؤمنة", slug: "furniture-storage-riyadh/", icon: "fas fa-warehouse", badge: "مكيفة" },
             { title: "نقل عفش خارج الرياض بين المدن", slug: "furniture-moving-outside-riyadh/", icon: "fas fa-route", badge: "ضمان" },
-            { title: "نقل مكاتب وشركات ومؤسسات", slug: "office-commercial-moving-riyadh/", icon: "fas fa-building", badge: "شامل" }
+            { title: "نقل مكاتب وشركات ومؤسسات", slug: "office-commercial-moving-riyadh/", icon: "fas fa-building", badge: "شامل" },
+            { title: "اسعار نقل العفش بالرياض ", slug: "furniture-moving-prices-riyadh/", icon: "fas fa-price", badge: "شامل" }
         ],
 
         riyadhRegions: {

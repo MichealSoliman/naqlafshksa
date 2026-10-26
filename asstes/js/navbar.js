@@ -585,7 +585,9 @@
                 { title: "تغليف العفش بالرياض", desc: "حماية ضد الخدوش والكسر", slug: "furniture-packaging-wrapping-riyadh/", icon: "fas fa-box-open" },
                 { title: "تخزين العفش بالرياض", desc: "مستودعات مؤمنة ومكيفة", slug: "furniture-storage-riyadh/", icon: "fas fa-warehouse" },
                 { title: "نقل عفش خارج الرياض", desc: "نقل بين المدن مع الضمان", slug: "furniture-moving-outside-riyadh/", icon: "fas fa-route" },
-                { title: "نقل مكاتب وشركات بالرياض", desc: "نقل احترافي لمقرات العمل", slug: "office-commercial-moving-riyadh/", icon: "fas fa-building" }
+                { title: "نقل مكاتب وشركات بالرياض", desc: "نقل احترافي لمقرات العمل", slug: "office-commercial-moving-riyadh/", icon: "fas fa-building" },
+                { title: "اسعار نقل العفش بالرياض", desc: "نقل احترافي لمقرات العمل", slug: "furniture-moving-prices-riyadh/", icon: "fas fa-building" }
+
             ];
 
         // 1. كود عناصر القائمة لسطح المكتب
