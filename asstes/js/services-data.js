@@ -56,6 +56,13 @@ const SITE_SERVICES = [
         slug: "office-commercial-moving-riyadh/",
         icon: "fas fa-building",
         badge: "للشركات"
+    },
+    {
+        title: "أسعار نقل العفش بالرياض",
+        desc: "دليل شامل لتكلفة نقل الأثاث والعوامل المؤثرة وعروض الأسعار",
+        slug: "furniture-moving-prices-riyadh/",
+        icon: "fas fa-calculator",
+        badge: "دليل الأسعار"
     }
 ];
 

@@ -212,9 +212,11 @@
             /* Dropdown Menu Panel */
             .mn-dropdown-menu {
                 position: absolute !important;
-                top: calc(100% + 10px) !important;
+                top: calc(100% + 8px) !important;
                 right: 0 !important;
-                width: 320px !important;
+                width: 330px !important;
+                max-height: min(520px, calc(100vh - 90px)) !important;
+                overflow-y: auto !important;
                 background: #ffffff !important;
                 border-radius: 16px !important;
                 box-shadow: 0 20px 45px -10px rgba(0, 0, 0, 0.35), 0 0 0 1px rgba(0,0,0,0.05) !important;
@@ -224,6 +226,33 @@
                 transform: translateY(10px) !important;
                 transition: opacity 0.25s ease, transform 0.25s ease !important;
                 z-index: 99999 !important;
+                scrollbar-width: thin !important;
+                scrollbar-color: #2d91cf #f1f5f9 !important;
+            }
+
+            /* الجسر الشفاف لمنع اختفاء القائمة عند تحريك الماوس بين الزر والقائمة */
+            .mn-dropdown-menu::before {
+                content: '' !important;
+                position: absolute !important;
+                top: -16px !important;
+                left: 0 !important;
+                right: 0 !important;
+                height: 16px !important;
+                background: transparent !important;
+            }
+
+            .mn-dropdown-menu::-webkit-scrollbar {
+                width: 5px !important;
+            }
+
+            .mn-dropdown-menu::-webkit-scrollbar-track {
+                background: #f1f5f9 !important;
+                border-radius: 10px !important;
+            }
+
+            .mn-dropdown-menu::-webkit-scrollbar-thumb {
+                background: #2d91cf !important;
+                border-radius: 10px !important;
             }
 
             .mn-dropdown-wrapper.mn-open .mn-dropdown-menu {
@@ -586,8 +615,7 @@
                 { title: "تخزين العفش بالرياض", desc: "مستودعات مؤمنة ومكيفة", slug: "furniture-storage-riyadh/", icon: "fas fa-warehouse" },
                 { title: "نقل عفش خارج الرياض", desc: "نقل بين المدن مع الضمان", slug: "furniture-moving-outside-riyadh/", icon: "fas fa-route" },
                 { title: "نقل مكاتب وشركات بالرياض", desc: "نقل احترافي لمقرات العمل", slug: "office-commercial-moving-riyadh/", icon: "fas fa-building" },
-                { title: "اسعار نقل العفش بالرياض", desc: "نقل احترافي لمقرات العمل", slug: "furniture-moving-prices-riyadh/", icon: "fas fa-building" }
-
+                { title: "أسعار نقل العفش بالرياض", desc: "دليل شامل لتكلفة نقل الأثاث والعوامل المؤثرة وحساب الأسعار", slug: "furniture-moving-prices-riyadh/", icon: "fas fa-calculator" }
             ];
 
         // 1. كود عناصر القائمة لسطح المكتب
@@ -764,46 +792,75 @@
             }, { passive: true });
         }
 
-        // 2. تفعيل القائمة المنسدلة لسطح المكتب (فتح بالنقر والتمرير)
+        // 2. تفعيل القائمة المنسدلة لسطح المكتب (فتح بالنقر والتمرير بسلاسة تامة)
         if (dropdownWrap && servicesBtn) {
+            let closeTimer = null;
+            let openedByClick = false;
+
+            function openDropdown() {
+                if (closeTimer) {
+                    clearTimeout(closeTimer);
+                    closeTimer = null;
+                }
+                dropdownWrap.classList.add('mn-open');
+                servicesBtn.setAttribute('aria-expanded', 'true');
+            }
+
+            function closeDropdown(immediate) {
+                if (closeTimer) {
+                    clearTimeout(closeTimer);
+                    closeTimer = null;
+                }
+                if (immediate) {
+                    dropdownWrap.classList.remove('mn-open');
+                    servicesBtn.setAttribute('aria-expanded', 'false');
+                    openedByClick = false;
+                } else {
+                    closeTimer = setTimeout(function () {
+                        dropdownWrap.classList.remove('mn-open');
+                        servicesBtn.setAttribute('aria-expanded', 'false');
+                        openedByClick = false;
+                    }, 250);
+                }
+            }
+
             // أ. النقر لفتح أو إغلاق الدروب داون
             servicesBtn.addEventListener('click', function (e) {
                 e.preventDefault();
                 e.stopPropagation();
+                if (closeTimer) clearTimeout(closeTimer);
                 const isOpen = dropdownWrap.classList.contains('mn-open');
-                if (isOpen) {
-                    dropdownWrap.classList.remove('mn-open');
-                    servicesBtn.setAttribute('aria-expanded', 'false');
+                if (isOpen && openedByClick) {
+                    closeDropdown(true);
                 } else {
-                    dropdownWrap.classList.add('mn-open');
-                    servicesBtn.setAttribute('aria-expanded', 'true');
+                    openDropdown();
+                    openedByClick = true;
                 }
             });
 
             // ب. التمرير بالماوس لفتح الدروب داون بسلاسة
             dropdownWrap.addEventListener('mouseenter', function () {
-                dropdownWrap.classList.add('mn-open');
-                servicesBtn.setAttribute('aria-expanded', 'true');
+                openDropdown();
             });
 
+            // ج. عند مغادرة الماوس مع مهلة زمنية (250ms) لمنع الاختفاء المفاجئ أثناء حركة المؤشر
             dropdownWrap.addEventListener('mouseleave', function () {
-                dropdownWrap.classList.remove('mn-open');
-                servicesBtn.setAttribute('aria-expanded', 'false');
-            });
-
-            // ج. إغلاق الدروب داون عند النقر في أي مكان خارجها
-            document.addEventListener('click', function (e) {
-                if (!dropdownWrap.contains(e.target)) {
-                    dropdownWrap.classList.remove('mn-open');
-                    servicesBtn.setAttribute('aria-expanded', 'false');
+                if (!openedByClick) {
+                    closeDropdown(false);
                 }
             });
 
-            // د. إغلاق الدروب داون عند الضغط على زر Escape
+            // د. إغلاق الدروب داون عند النقر في أي مكان خارجها
+            document.addEventListener('click', function (e) {
+                if (!dropdownWrap.contains(e.target)) {
+                    closeDropdown(true);
+                }
+            });
+
+            // هـ. إغلاق الدروب داون عند الضغط على زر Escape
             document.addEventListener('keydown', function (e) {
                 if (e.key === 'Escape') {
-                    dropdownWrap.classList.remove('mn-open');
-                    servicesBtn.setAttribute('aria-expanded', 'false');
+                    closeDropdown(true);
                 }
             });
         }

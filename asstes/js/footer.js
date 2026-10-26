@@ -71,7 +71,7 @@
             { title: "تخزين عفش بمستودعات مؤمنة", slug: "furniture-storage-riyadh/", icon: "fas fa-warehouse", badge: "مكيفة" },
             { title: "نقل عفش خارج الرياض بين المدن", slug: "furniture-moving-outside-riyadh/", icon: "fas fa-route", badge: "ضمان" },
             { title: "نقل مكاتب وشركات ومؤسسات", slug: "office-commercial-moving-riyadh/", icon: "fas fa-building", badge: "شامل" },
-            { title: "اسعار نقل العفش بالرياض ", slug: "furniture-moving-prices-riyadh/", icon: "fas fa-price", badge: "شامل" }
+            { title: "أسعار نقل العفش بالرياض", slug: "furniture-moving-prices-riyadh/", icon: "fas fa-calculator", badge: "دليل شامل" }
         ],
 
         riyadhRegions: {
@@ -881,16 +881,22 @@
 
         // 2. قائمة الخدمات
         let servicesHtml = '';
-        c.services.forEach(item => {
+        const footerServices = (typeof window.SITE_SERVICES !== 'undefined' && Array.isArray(window.SITE_SERVICES) && window.SITE_SERVICES.length > 0)
+            ? window.SITE_SERVICES
+            : c.services;
+
+        footerServices.forEach(item => {
             const url = resolveUrl(basePath, item.slug);
+            const icon = item.icon || 'fas fa-truck';
+            const badge = item.badge || 'خدمة مميزة';
             servicesHtml += `
                 <li>
                     <a href="${url}" class="mf-service-link">
                         <span class="mf-service-left">
-                            <i class="${item.icon}" style="color:#2d91cf; width:16px; text-align:center;"></i>
+                            <i class="${icon}" style="color:#2d91cf; width:16px; text-align:center;"></i>
                             <span>${item.title}</span>
                         </span>
-                        <span class="mf-service-badge">${item.badge}</span>
+                        <span class="mf-service-badge">${badge}</span>
                     </a>
                 </li>
             `;
