@@ -78,7 +78,7 @@
                 label: "شمال الرياض",
                 areas: [
                     { name: "حي الملقا", slug: "areas/furniture-moving-hayu-almalqa-riyadh/" },
-                    { name: "حي الياسمين", slug: "areas/" },
+                    { name: "حي الياسمين", slug: "areas/hayu-alyasmeen/" },
                     { name: "حي النرجس", slug: "areas/" },
                     { name: "حي الصحافة", slug: "areas/" },
                     { name: "حي حطين", slug: "areas/" },

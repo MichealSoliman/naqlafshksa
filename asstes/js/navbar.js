@@ -521,11 +521,6 @@
                     display: flex !important;
                 }
             }
-
-            /* Body spacing so fixed header doesn't cover top section */
-            body {
-                padding-top: 80px !important;
-            }
         `;
         document.head.appendChild(style);
     }
