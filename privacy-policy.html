@@ -115,97 +115,8 @@
     </a>
 
     <!-- Header / Navbar -->
-    <header class="bg-white shadow-lg sticky top-0 z-50 border-b-2 border-yellow-500">
-        <nav class="container mx-auto px-4 py-3">
-            <div class="flex items-center justify-between">
-                <a href="/" class="flex items-center space-x-3 space-x-reverse">
-                    <div
-                        class="bg-white rounded-full h-14 w-14 shadow-md p-1 border-2 border-yellow-500 flex items-center justify-center">
-                        <img src="./asstes/img/logo.webp" alt="شعار شركة مسار لنقل العفش بالرياض"
-                            class="max-w-full max-h-full object-contain">
-                    </div>
-                    <div>
-                        <span class="text-xl font-bold text-primary block">شركة مسار</span>
-                        <p class="text-xs text-gray-500">لنقل العفش بالرياض</p>
-                    </div>
-                </a>
-
-                <div class="flex items-center space-x-6 space-x-reverse">
-                    <a href="./" class="text-gray-700 hover:text-primary transition font-semibold">
-                        <i class="fas fa-home ml-1"></i> الرئيسية
-                    </a>
-
-                    <!-- Services Dropdown -->
-                    <div class="relative group">
-                        <a href="./services.html"
-                            class="text-gray-700 hover:text-primary transition font-semibold flex items-center gap-1 py-2">
-                            <span>خدماتنا</span>
-                            <i
-                                class="fas fa-chevron-down text-xs transition-transform duration-300 group-hover:rotate-180"></i>
-                        </a>
-                        <!-- Dropdown Menu -->
-                        <div
-                            class="absolute right-0 top-full hidden group-hover:block w-72 bg-white rounded-2xl shadow-2xl py-3 border border-gray-100 text-gray-800 z-50">
-                            <a href="./furniture-disassembly-and-reassembly-in-riyadh/"
-                                class="flex items-center gap-3 px-5 py-3 hover:bg-blue-50 hover:text-secondary transition font-medium text-right border-b border-gray-50">
-                                <div
-                                    class="w-8 h-8 rounded-lg bg-secondary/10 flex items-center justify-center text-secondary">
-                                    <i class="fas fa-wrench"></i>
-                                </div>
-                                <div>
-                                    <div class="font-bold text-sm text-[#153052]">فك وتركيب عفش بالرياض</div>
-                                    <div class="text-xs text-gray-500">فنيون متخصصون لجميع الأثاث</div>
-                                </div>
-                            </a>
-                            <a href="./dina-furniture-moving-riyadh/"
-                                class="flex items-center gap-3 px-5 py-3 hover:bg-blue-50 hover:text-secondary transition font-medium text-right border-b border-gray-50">
-                                <div
-                                    class="w-8 h-8 rounded-lg bg-secondary/10 flex items-center justify-center text-secondary">
-                                    <i class="fas fa-truck text-sm"></i>
-                                </div>
-                                <div>
-                                    <div class="font-bold text-sm text-[#153052]">دينا نقل عفش بالرياض</div>
-                                    <div class="text-xs text-gray-500">شاحنات مجهزة بحمولات متنوعة</div>
-                                </div>
-                            </a>
-                            <a href="./#services"
-                                class="flex items-center gap-3 px-5 py-3 hover:bg-blue-50 hover:text-secondary transition font-medium text-right border-b border-gray-50">
-                                <div
-                                    class="w-8 h-8 rounded-lg bg-secondary/10 flex items-center justify-center text-secondary">
-                                    <i class="fas fa-box-open text-sm"></i>
-                                </div>
-                                <div>
-                                    <div class="font-bold text-sm text-[#153052]">تغليف الأثاث والعفش</div>
-                                    <div class="text-xs text-gray-500">حماية ضد الخدوش والكسر</div>
-                                </div>
-                            </a>
-                            <a href="./#services"
-                                class="flex items-center gap-3 px-5 py-3 hover:bg-blue-50 hover:text-secondary transition font-medium text-right border-b border-gray-50">
-                                <div
-                                    class="w-8 h-8 rounded-lg bg-secondary/10 flex items-center justify-center text-secondary">
-                                    <i class="fas fa-warehouse text-sm"></i>
-                                </div>
-                                <div>
-                                    <div class="font-bold text-sm text-[#153052]">تخزين العفش بالرياض</div>
-                                    <div class="text-xs text-gray-500">مستودعات مؤمنة ومكيفة</div>
-                                </div>
-                            </a>
-                            <a href="./services.html"
-                                class="flex items-center justify-between px-5 py-3 bg-gray-50 hover:bg-secondary hover:text-white transition font-bold text-sm text-primary rounded-b-xl mt-1">
-                                <span>جميع الخدمات</span>
-                                <i class="fas fa-arrow-left text-xs"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                    <a href="tel:0539877874"
-                        class="bg-primary text-white px-5 py-2 rounded-full hover:bg-blue-900 transition font-semibold text-sm">
-                        <i class="fas fa-phone-alt ml-1"></i> 0539877874
-                    </a>
-                </div>
-            </div>
-        </nav>
-    </header>
+    <!-- Unified Centralized Header / Navbar (النافبار الموحد لجميع الصفحات) -->
+    <header id="site-header"></header>
 
     <!-- Page Banner -->
     <section class="bg-gradient-to-r from-primary to-blue-900 text-white py-12">
@@ -284,20 +195,13 @@
         </div>
     </main>
 
-    <!-- Footer -->
-    <footer class="bg-primary text-white py-8 border-t border-yellow-500 text-center text-sm">
-        <div class="container mx-auto px-4">
-            <p>&copy; 2026 شركة مسار لنقل العفش بالرياض. جميع الحقوق محفوظة.</p>
-            <div class="mt-2 space-x-4 space-x-reverse text-gray-300">
-                <a href="/" class="hover:text-yellow-400">الرئيسية</a>
-                <span>|</span>
-                <a href="privacy-policy.html" class="hover:text-yellow-400">سياسة الخصوصية</a>
-            </div>
-        </div>
-    </footer>
+    <!-- Unified Centralized Footer (الفوتر الموحد لجميع الصفحات) -->
+    <footer id="site-footer"></footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
     <script src="./asstes/js/services-data.js" defer></script>
+    <script src="./asstes/js/navbar.js" defer></script>
+    <script src="./asstes/js/footer.js" defer></script>
     <script src="./asstes/js/main.js" defer></script>
     <script>
         AOS.init({ duration: 1000, once: true });

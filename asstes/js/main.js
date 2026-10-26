@@ -326,12 +326,26 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 // Run Initialization
 document.addEventListener('DOMContentLoaded', function() {
+    if (typeof renderSiteNavbar === 'function') {
+        renderSiteNavbar();
+    }
     renderServicesDropdown();
     initTypingText();
+    if (typeof renderSiteFooter === 'function') {
+        renderSiteFooter();
+    }
 });
 
 // Run render immediately if DOM is already loaded
 if (document.readyState === 'interactive' || document.readyState === 'complete') {
+    if (typeof renderSiteNavbar === 'function') {
+        renderSiteNavbar();
+    }
     renderServicesDropdown();
     initTypingText();
+    if (typeof renderSiteFooter === 'function') {
+        renderSiteFooter();
+    }
 }
+
+
