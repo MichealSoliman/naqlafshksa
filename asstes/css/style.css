@@ -2563,3 +2563,114 @@ footer {
     }
 }
 
+
+
+/* Works / Portfolio Section Styles */
+.works-filter-btn {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.works-filter-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.works-filter-active {
+    background-color: #153052 !important;
+    color: #ffffff !important;
+}
+.works-work-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 16px;
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Lightbox Modal */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 99999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    align-items: center;
+    justify-content: center;
+}
+.lightbox.active {
+    display: flex;
+}
+.lightbox img {
+    max-width: 90%;
+    max-height: 85vh;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+}
+
+/* Mobile Performance Optimizations */
+@media (max-width: 768px) {
+    .floating-particles-light,
+    .feature-orbits-light,
+    .map-dots-container {
+        display: none !important;
+    }
+    .blur-3xl {
+        filter: none !important;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, ::before, ::after {
+        animation-delay: -1ms !important;
+        animation-duration: 1ms !important;
+        animation-iteration-count: 1 !important;
+        background-attachment: initial !important;
+        scroll-behavior: auto !important;
+        transition-duration: 0s !important;
+        transition-delay: 0s !important;
+    }
+}
+
+/* Pricing Page & General Anchor Offsets */
+.hero-gradient {
+    background: linear-gradient(135deg, #153052 0%, #2d91cf 100%);
+}
+
+section[id], h2[id], h3[id] {
+    scroll-margin-top: 100px;
+}
+
+.price-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    font-size: 0.95rem;
+}
+
+.price-table th {
+    background: #153052;
+    color: #ffffff;
+    padding: 0.85rem 1.25rem;
+    text-align: right;
+    font-weight: 700;
+}
+
+.price-table td {
+    padding: 0.85rem 1.25rem;
+    border-bottom: 1px solid #e2e8f0;
+    color: #334155;
+}
+
+.price-table tr:nth-child(even) {
+    background: #f8fafc;
+}
+
+.price-table tr:hover {
+    background: #eff6ff;
+}
+

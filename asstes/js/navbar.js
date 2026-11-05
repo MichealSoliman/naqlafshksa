@@ -29,8 +29,8 @@
             logoAlt: "شعار شركة مسار لنقل العفش بالرياض"
         },
         contact: {
-            phone: "0539877874",
-            phoneDisplay: "053 987 7874",
+            phone: "+966539877874",
+            phoneDisplay: "0539877874",
             whatsapp: "966539877874",
             whatsappMessage: "السلام عليكم، أحتاج عرض سعر لنقل العفش بالرياض"
         },
@@ -760,7 +760,7 @@
                         </a>
                         <a href="${waFullLink}" target="_blank" rel="noopener noreferrer" class="mn-mobile-wa">
                             <i class="fab fa-whatsapp"></i>
-                            <span>تواصل عبر واتساب مباشر 24/7</span>
+                            <span>تواصل عبر واتساب مباشر</span>
                         </a>
                     </div>
                 </div>
@@ -928,6 +928,11 @@
         let headerTarget = document.getElementById('site-header') ||
                            document.getElementById('header') ||
                            document.querySelector('header');
+
+        if (headerTarget && (headerTarget.getAttribute('data-static') === 'true' || headerTarget.children.length > 0)) {
+            setupNavbarEvents();
+            return;
+        }
 
         if (headerTarget) {
             const wrapper = document.createElement('div');

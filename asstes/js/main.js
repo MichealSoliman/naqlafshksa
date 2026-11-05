@@ -1,11 +1,4 @@
-// Initialize AOS (Animate On Scroll) if available
-if (typeof AOS !== 'undefined') {
-    AOS.init({
-        duration: 1000,
-        once: true,
-        offset: 100
-    });
-}
+// Global Application Scripts (No AOS dependency)
 
 /**
  * دالة إنشاء وتحديث قائمة "خدماتنا" في النافبار لجميع الصفحات تلقائياً (سطح المكتب والموبايل)
@@ -201,6 +194,7 @@ window.toggleFAQ = function(button) {
     // Close other FAQ items
     document.querySelectorAll('.faq-answer').forEach(otherAnswer => {
         if (otherAnswer !== answer) {
+            otherAnswer.classList.add('hidden');
             otherAnswer.style.display = 'none';
             otherAnswer.classList.remove('open');
             const parentItem = otherAnswer.closest('.faq-item') || otherAnswer.parentElement;
@@ -219,9 +213,10 @@ window.toggleFAQ = function(button) {
     
     // Toggle active state
     if (answer) {
-        const isHidden = answer.style.display === 'none' || getComputedStyle(answer).display === 'none';
+        const isHidden = answer.classList.contains('hidden') || answer.style.display === 'none' || getComputedStyle(answer).display === 'none';
         if (isHidden) {
             if (item) item.classList.add('active');
+            answer.classList.remove('hidden');
             answer.classList.add('open');
             answer.style.display = 'block';
             button.setAttribute('aria-expanded', 'true');
@@ -231,6 +226,7 @@ window.toggleFAQ = function(button) {
             }
         } else {
             if (item) item.classList.remove('active');
+            answer.classList.add('hidden');
             answer.classList.remove('open');
             answer.style.display = 'none';
             button.setAttribute('aria-expanded', 'false');

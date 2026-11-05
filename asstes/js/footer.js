@@ -18,24 +18,24 @@
         company: {
             name: "شركة مسار لنقل العفش بالرياض",
             shortName: "شركة مسار لنقل العفش",
-            slogan: "نقل آمن • فك وتركيب احترافي • تغليف خماسي • ضمان شامل 100%",
-            description: "شركة رائدة ومعتمدة متخصصة في نقل وتغليف وتخزين الأثاث بالرياض. نوفر أسطول سيارات دينا وونيت مجهز بصناديق مقفلة ومبطنة، مع كوادر فنية مدربة من نجارين وفنيي تكييف لضمان حماية عفش منزلك ومكتبك بأعلى معايير الأمان والسرعة.",
-            crNumber: "1010894723",
-            taxNumber: "310485962100003",
-            license: "ترخيص نقل بري معتمد - الهيئة العامة للنقل",
-            maroofBadge: "موثق بمنصة معروف الرسمية",
+            slogan: "نقل آمن • فك وتركيب احترافي • تغليف متين • عناية فائقة بالأثاث",
+            description: "شركة متخصصة في نقل وتغليف وتخزين الأثاث بالرياض. نوفر أسطول سيارات دينا وونيت مجهز بصناديق مقفلة ومبطنة، مع كوادر فنية مدربة من نجارين وفنيي تكييف لضمان حماية عفش منزلك ومكتبك بأعلى معايير الأمان.",
+            crNumber: "<!-- TODO: add verified commercial registration -->",
+            taxNumber: "",
+            license: "ترخيص نقل معتمد",
+            maroofBadge: "موثق رسمياً",
             logoPath: "asstes/img/logo.webp",
             logoAlt: "شعار شركة مسار لنقل العفش بالرياض"
         },
 
         contact: {
-            phone: "0539877874",
-            phoneDisplay: "053 987 7874",
+            phone: "+966539877874",
+            phoneDisplay: "0539877874",
             whatsapp: "966539877874",
             whatsappMessage: "السلام عليكم، أحتاج عرض سعر لخدمة نقل العفش بالرياض",
             email: "info@naqlafshksa.com",
             address: "مدينة الرياض، المملكة العربية السعودية",
-            workingHours: "متاحون على مدار 24 ساعة / طوال أيام الأسبوع (24/7)",
+            workingHours: "السبت - الخميس: 8:00 ص - 10:00 م | الجمعة: 2:00 م - 10:00 م",
             mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3624.837983982045!2d46.67529531500032!3d24.71355198409114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f038f6ed1b9ef%3A0x7a4c2a68f1bbd4c1!2sRiyadh%2C%20Saudi%20Arabia!5e0!3m2!1sen!2ssa!4v1697047634567!5m2!1sen!2ssa",
             mapDirectionsUrl: "https://maps.google.com/?q=Riyadh,Saudi+Arabia"
         },
@@ -43,8 +43,8 @@
         trustHighlights: [
             {
                 icon: "fas fa-shield-alt",
-                title: "ضمان شامل 100%",
-                desc: "عقد رسمي وضمان معتمد ضد أي خدوش أو تلفيات أثناء النقل."
+                title: "عناية تامة بالأثاث",
+                desc: "نحرص على التعامل بحرص مع المنقولات أثناء الفك والتغليف والتحميل والنقل."
             },
             {
                 icon: "fas fa-user-tie",
@@ -58,8 +58,8 @@
             },
             {
                 icon: "fas fa-clock",
-                title: "سرعة استجابة 24/7",
-                desc: "وصول سريع خلال 20 - 30 دقيقة لكافة أحياء الرياض وضواحيها."
+                title: "ساعات عمل مرنة",
+                desc: "السبت إلى الخميس 8 ص - 10 م، والجمعة 2 م - 10 م وتنسيق مباشر للمواعيد."
             }
         ],
 
@@ -975,7 +975,7 @@
                             </a>
                             <a href="${waFullLink}" target="_blank" rel="noopener noreferrer" class="mf-btn-wa">
                                 <i class="fab fa-whatsapp" style="font-size:18px;"></i>
-                                <span>واتساب مباشر 24/7</span>
+                                <span>واتساب مباشر</span>
                             </a>
                         </div>
                     </div>
@@ -1060,7 +1060,7 @@
 
                             <div style="margin-top:14px; padding-top:10px; border-top:1px solid rgba(255,255,255,0.06);">
                                 <a href="${resolveUrl(basePath, 'areas/')}" style="font-size:12.5px; font-weight:700; color:#2d91cf;">
-                                    دليل تغطية أكثر من 50 حي في الرياض &larr;
+                                    دليل تغطية أحياء الرياض &larr;
                                 </a>
                             </div>
                         </div>
@@ -1085,7 +1085,7 @@
                                     <i class="fab fa-whatsapp" style="color:#25D366;"></i>
                                     <div>
                                         <div class="mf-contact-label">واتساب خدمة العملاء:</div>
-                                        <a href="${waFullLink}" target="_blank" rel="noopener noreferrer" class="mf-contact-val" style="color:#25D366;">محادثة فورية 24/7</a>
+                                        <a href="${waFullLink}" target="_blank" rel="noopener noreferrer" class="mf-contact-val" style="color:#25D366;">محادثة فورية عبر واتساب</a>
                                     </div>
                                 </div>
 
@@ -1203,6 +1203,23 @@
                            document.getElementById('master-footer') ||
                            document.querySelector('footer.mf-root') ||
                            document.querySelector('footer');
+
+        if (footerTarget && (footerTarget.getAttribute('data-static') === 'true' || footerTarget.children.length > 0)) {
+            const scrollBtn = document.getElementById('mf-scroll-top-btn');
+            if (scrollBtn) {
+                scrollBtn.addEventListener('click', function () {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                });
+            }
+            const yearEl = document.getElementById('mf-year');
+            if (yearEl) {
+                yearEl.textContent = new Date().getFullYear();
+            }
+            return;
+        }
 
         if (footerTarget) {
             const wrapper = document.createElement('div');
