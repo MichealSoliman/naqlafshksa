@@ -1972,9 +1972,12 @@ footer {
     padding-bottom: 30px !important;
     border-top: 4px solid #2d91cf !important;
     overflow: hidden !important;
+    display: block !important;
 }
 
-.mf-root * {
+.mf-root *,
+.mf-root *::before,
+.mf-root *::after {
     box-sizing: border-box !important;
 }
 
@@ -1982,17 +1985,23 @@ footer {
     color: #cbd5e1 !important;
     text-decoration: none !important;
     transition: all 0.25s ease !important;
+    display: inline-block;
 }
 
 .mf-root a:hover {
     color: #2d91cf !important;
 }
 
+.mf-root .mf-container,
 .mf-container {
-    max-width: 1220px !important;
-    margin: 0 auto !important;
-    padding: 0 20px !important;
+    max-width: 1320px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-inline: auto !important;
+    padding-left: 24px !important;
+    padding-right: 24px !important;
     width: 100% !important;
+    display: block !important;
 }
 
 /* Trust Bar */

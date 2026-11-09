@@ -18,8 +18,8 @@
         company: {
             name: "شركة مسار لنقل العفش بالرياض",
             shortName: "شركة مسار لنقل العفش",
-            slogan: "نقل آمن • فك وتركيب احترافي • تغليف متين • عناية فائقة بالأثاث",
-            description: "شركة متخصصة في نقل وتغليف وتخزين الأثاث بالرياض. نوفر أسطول سيارات دينا وونيت مجهز بصناديق مقفلة ومبطنة، مع كوادر فنية مدربة من نجارين وفنيي تكييف لضمان حماية عفش منزلك ومكتبك بأعلى معايير الأمان.",
+            slogan: "نقل آمن • فك وتركيب • تغليف متين • عناية بالأثاث",
+            description: "شركة متخصصة في نقل وتغليف وتخزين الأثاث بالرياض. نوفر أسطول سيارات دينا وونيت مجهز بصناديق مقفلة ومبطنة، مع فنيين ونجارين لفك وتركيب ونقل أثاث منزلك ومكتبك.",
             crNumber: "<!-- TODO: add verified commercial registration -->",
             taxNumber: "",
             license: "ترخيص نقل معتمد",
@@ -32,29 +32,29 @@
             phone: "+966539877874",
             phoneDisplay: "0539877874",
             whatsapp: "966539877874",
-            whatsappMessage: "السلام عليكم، أحتاج عرض سعر لخدمة نقل العفش بالرياض",
+            whatsappMessage: "السلام عليكم، أحتاج حجز نقل عفش بالرياض ومعاينة مجانية",
             email: "info@naqlafshksa.com",
             address: "مدينة الرياض، المملكة العربية السعودية",
             workingHours: "السبت - الخميس: 8:00 ص - 10:00 م | الجمعة: 2:00 م - 10:00 م",
-            mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3624.837983982045!2d46.67529531500032!3d24.71355198409114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f038f6ed1b9ef%3A0x7a4c2a68f1bbd4c1!2sRiyadh%2C%20Saudi%20Arabia!5e0!3m2!1sen!2ssa!4v1697047634567!5m2!1sen!2ssa",
-            mapDirectionsUrl: "https://maps.google.com/?q=Riyadh,Saudi+Arabia"
+            mapEmbedUrl: "",
+            mapDirectionsUrl: ""
         },
 
         trustHighlights: [
             {
                 icon: "fas fa-shield-alt",
-                title: "عناية تامة بالأثاث",
-                desc: "نحرص على التعامل بحرص مع المنقولات أثناء الفك والتغليف والتحميل والنقل."
+                title: "عناية بالأثاث",
+                desc: "نتعامل بعناية مع المنقولات أثناء الفك والتغليف والتحميل والنقل."
             },
             {
                 icon: "fas fa-user-tie",
                 title: "نجارون وفنيون متخصصون",
-                desc: "فك وتركيب متقن لغرف النوم والمطابخ والمكيفات وأثاث إيكيا."
+                desc: "فك وتركيب متقن لغرف النوم والمطابخ والمكيفات."
             },
             {
                 icon: "fas fa-truck-moving",
                 title: "دينا وونيت مجهز ومغلق",
-                desc: "شاحنات مبطنة لحماية الأثاث من أتربة وحرارة الجو وتقلبات الطقس."
+                desc: "سيارات مبطنة لحماية الأثاث من أتربة وحرارة الجو وتقلبات الطقس."
             },
             {
                 icon: "fas fa-clock",
@@ -64,14 +64,17 @@
         ],
 
         services: [
-            { title: "فك وتركيب عفش بالرياض", slug: "furniture-disassembly-and-reassembly-in-riyadh/", icon: "fas fa-tools", badge: "محترفون" },
-            { title: "دينا نقل عفش بالرياض", slug: "dina-furniture-moving-riyadh/", icon: "fas fa-truck", badge: "مجهزة" },
-            { title: "ونيت نقل عفش بالرياض", slug: "wanet-furniture-moving-riyadh/", icon: "fas fa-truck-pickup", badge: "سريع" },
-            { title: "تغليف العفش الاحترافي", slug: "furniture-packaging-wrapping-riyadh/", icon: "fas fa-box-open", badge: "حماية" },
-            { title: "تخزين عفش بمستودعات مؤمنة", slug: "furniture-storage-riyadh/", icon: "fas fa-warehouse", badge: "مكيفة" },
-            { title: "نقل عفش خارج الرياض بين المدن", slug: "furniture-moving-outside-riyadh/", icon: "fas fa-route", badge: "ضمان" },
-            { title: "نقل مكاتب وشركات ومؤسسات", slug: "office-commercial-moving-riyadh/", icon: "fas fa-building", badge: "شامل" },
-            { title: "أسعار نقل العفش بالرياض", slug: "furniture-moving-prices-riyadh/", icon: "fas fa-calculator", badge: "دليل شامل" }
+            { title: "فك وتركيب عفش بالرياض", slug: "furniture-disassembly-and-reassembly-in-riyadh/", icon: "fas fa-wrench" },
+            { title: "دينا نقل عفش بالرياض", slug: "dina-furniture-moving-riyadh/", icon: "fas fa-truck" },
+            { title: "ونيت نقل عفش بالرياض", slug: "wanet-furniture-moving-riyadh/", icon: "fas fa-truck-pickup" },
+            { title: "تغليف العفش بالرياض", slug: "furniture-packaging-wrapping-riyadh/", icon: "fas fa-box-open" },
+            { title: "تخزين العفش بالرياض", slug: "furniture-storage-riyadh/", icon: "fas fa-warehouse" },
+            { title: "نقل عفش شقق بالرياض", slug: "apartment-furniture-moving-riyadh/", icon: "fas fa-door-open" },
+            { title: "نقل أثاث فلل بالرياض", slug: "villa-furniture-moving-riyadh/", icon: "fas fa-home" },
+            { title: "نقل عفش خارج الرياض", slug: "furniture-moving-outside-riyadh/", icon: "fas fa-route" },
+            { title: "نقل مكاتب وشركات بالرياض", slug: "office-commercial-moving-riyadh/", icon: "fas fa-building" },
+            { title: "ونش رفع أثاث بالرياض", slug: "crane-winch-furniture-lifting-riyadh/", icon: "fas fa-arrow-up" },
+            { title: "أسعار نقل العفش بالرياض", slug: "furniture-moving-prices-riyadh/", icon: "fas fa-calculator" }
         ],
 
         riyadhRegions: {
@@ -80,34 +83,22 @@
                 areas: [
                     { name: "حي الملقا", slug: "areas/furniture-moving-hayu-almalqa-riyadh/" },
                     { name: "حي الياسمين", slug: "areas/hayu-alyasmeen/" },
-                    { name: "حي النرجس", slug: "areas/" },
-                    { name: "حي الصحافة", slug: "areas/" },
-                    { name: "حي حطين", slug: "areas/" },
-                    { name: "حي العارض", slug: "areas/" },
-                    { name: "حي الربيع", slug: "areas/" },
-                    { name: "حي العقيق", slug: "areas/" }
+                    { name: "حي النرجس", slug: "areas/furniture-moving-hayu-alnarjis-riyadh/" },
+                    { name: "حي الصحافة", slug: "areas/furniture-moving-hayu-alsahafa-riyadh/" },
+                    { name: "حي حطين", slug: "areas/furniture-moving-hayu-hittin-riyadh/" }
+                ]
+            },
+            center: {
+                label: "وسط الرياض",
+                areas: [
+                    { name: "حي العليا", slug: "areas/furniture-moving-hayu-alolaya-riyadh/" }
                 ]
             },
             east: {
                 label: "شرق الرياض",
                 areas: [
-                    { name: "حي الروضة", slug: "areas/" },
-                    { name: "حي اليرموك", slug: "areas/" },
-                    { name: "حي المونسية", slug: "areas/" },
-                    { name: "حي قرطبة", slug: "areas/" },
-                    { name: "حي النسيم", slug: "areas/" },
-                    { name: "حي الحمراء", slug: "areas/" }
-                ]
-            },
-            westCentral: {
-                label: "وسط وغرب وجنوب الرياض",
-                areas: [
-                    { name: "حي العليا", slug: "areas/" },
-                    { name: "حي السليمانية", slug: "areas/" },
-                    { name: "حي الملك فهد", slug: "areas/" },
-                    { name: "حي ظهرة لبن", slug: "areas/" },
-                    { name: "حي السويدي", slug: "areas/" },
-                    { name: "حي الشفا", slug: "areas/" }
+                    { name: "حي الروضة", slug: "areas/furniture-moving-hayu-alrawdah-riyadh/" },
+                    { name: "حي المونسية", slug: "areas/furniture-moving-hayu-almonsiyah-riyadh/" }
                 ]
             }
         },
@@ -203,12 +194,13 @@
                 padding-bottom: 30px !important;
                 border-top: 4px solid #2d91cf !important;
                 overflow: hidden !important;
+                display: block !important;
             }
 
-            .mf-root * {
+            .mf-root *,
+            .mf-root *::before,
+            .mf-root *::after {
                 box-sizing: border-box !important;
-                margin: 0;
-                padding: 0;
             }
 
             .mf-root a {
@@ -222,13 +214,16 @@
                 color: #2d91cf !important;
             }
 
+            .mf-root .mf-container,
             .mf-container {
-                max-width: 1220px !important;
+                max-width: 1320px !important;
                 margin-left: auto !important;
                 margin-right: auto !important;
-                padding-left: 20px !important;
-                padding-right: 20px !important;
+                margin-inline: auto !important;
+                padding-left: 24px !important;
+                padding-right: 24px !important;
                 width: 100% !important;
+                display: block !important;
             }
 
             /* Section 1: Trust Highlights Grid */

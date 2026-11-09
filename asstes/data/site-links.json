@@ -1,0 +1,137 @@
+{
+  "company": {
+    "name": "شركة مسار لنقل العفش بالرياض",
+    "shortName": "شركة مسار",
+    "slogan": "نقل آمن • فك وتركيب • تغليف متين • عناية بالأثاث",
+    "description": "شركة متخصصة في نقل وتغليف وتخزين الأثاث بالرياض. نوفر أسطول سيارات دينا وونيت مجهز بصناديق مقفلة ومبطنة، مع فنيين ونجارين لفك وتركيب ونقل أثاث منزلك ومكتبك.",
+    "phone": "+966539877874",
+    "phoneDisplay": "0539877874",
+    "whatsapp": "966539877874",
+    "whatsappMessage": "السلام عليكم، أحتاج حجز نقل عفش بالرياض ومعاينة مجانية",
+    "workingHours": "السبت - الخميس: 8:00 ص - 10:00 م | الجمعة: 2:00 م - 10:00 م",
+    "location": "مدينة الرياض، المملكة العربية السعودية"
+  },
+  "services": [
+    {
+      "title": "فك وتركيب عفش بالرياض",
+      "slug": "furniture-disassembly-and-reassembly-in-riyadh/",
+      "icon": "fas fa-wrench"
+    },
+    {
+      "title": "دينا نقل عفش بالرياض",
+      "slug": "dina-furniture-moving-riyadh/",
+      "icon": "fas fa-truck"
+    },
+    {
+      "title": "ونيت نقل عفش بالرياض",
+      "slug": "wanet-furniture-moving-riyadh/",
+      "icon": "fas fa-truck-pickup"
+    },
+    {
+      "title": "تغليف العفش بالرياض",
+      "slug": "furniture-packaging-wrapping-riyadh/",
+      "icon": "fas fa-box-open"
+    },
+    {
+      "title": "تخزين العفش بالرياض",
+      "slug": "furniture-storage-riyadh/",
+      "icon": "fas fa-warehouse"
+    },
+    {
+      "title": "نقل عفش خارج الرياض",
+      "slug": "furniture-moving-outside-riyadh/",
+      "icon": "fas fa-route"
+    },
+    {
+      "title": "نقل مكاتب وشركات بالرياض",
+      "slug": "office-commercial-moving-riyadh/",
+      "icon": "fas fa-building"
+    },
+    {
+      "title": "ونش رفع أثاث بالرياض",
+      "slug": "crane-winch-furniture-lifting-riyadh/",
+      "icon": "fas fa-arrow-up"
+    },
+    {
+      "title": "نقل عفش شقق بالرياض",
+      "slug": "apartment-furniture-moving-riyadh/",
+      "icon": "fas fa-door-open"
+    },
+    {
+      "title": "نقل أثاث فلل بالرياض",
+      "slug": "villa-furniture-moving-riyadh/",
+      "icon": "fas fa-home"
+    },
+    {
+      "title": "أسعار نقل العفش بالرياض",
+      "slug": "furniture-moving-prices-riyadh/",
+      "icon": "fas fa-calculator"
+    }
+  ],
+  "areas": [
+    {
+      "name": "حي الملقا",
+      "slug": "areas/furniture-moving-hayu-almalqa-riyadh/",
+      "region": "north"
+    },
+    {
+      "name": "حي الياسمين",
+      "slug": "areas/hayu-alyasmeen/",
+      "region": "north"
+    },
+    {
+      "name": "حي النرجس",
+      "slug": "areas/furniture-moving-hayu-alnarjis-riyadh/",
+      "region": "north"
+    },
+    {
+      "name": "حي الصحافة",
+      "slug": "areas/furniture-moving-hayu-alsahafa-riyadh/",
+      "region": "north"
+    },
+    {
+      "name": "حي حطين",
+      "slug": "areas/furniture-moving-hayu-hittin-riyadh/",
+      "region": "north"
+    },
+    {
+      "name": "حي العليا",
+      "slug": "areas/furniture-moving-hayu-alolaya-riyadh/",
+      "region": "center"
+    },
+    {
+      "name": "حي الروضة",
+      "slug": "areas/furniture-moving-hayu-alrawdah-riyadh/",
+      "region": "east"
+    },
+    {
+      "name": "حي المونسية",
+      "slug": "areas/furniture-moving-hayu-almonsiyah-riyadh/",
+      "region": "east"
+    }
+  ],
+  "articles": [
+    {
+      "title": "قائمة تجهيز الانتقال: ماذا تفعل قبل نقل العفش بأسبوع؟",
+      "slug": "blog/moving-checklist-week-before-furniture-transfer/"
+    },
+    {
+      "title": "الفرق بين الونيت والدينا ومتى تستخدم كل واحدة؟",
+      "slug": "blog/difference-between-wanet-and-dina-furniture-moving/"
+    },
+    {
+      "title": "متى تحتاج ونش لرفع الأثاث؟",
+      "slug": "blog/when-do-you-need-crane-winch-furniture-lifting/"
+    }
+  ],
+  "quickLinks": [
+    { "title": "الرئيسية", "slug": "" },
+    { "title": "من نحن", "slug": "about/" },
+    { "title": "خدماتنا", "slug": "services.html" },
+    { "title": "أحياء الرياض", "slug": "areas/" },
+    { "title": "المدونة", "slug": "blog/" },
+    { "title": "اتصل بنا", "slug": "contact/" },
+    { "title": "سياسة الخصوصية", "slug": "privacy-policy.html" }
+  ]
+}
+

@@ -609,12 +609,15 @@
             ? window.SITE_SERVICES 
             : [
                 { title: "فك وتركيب عفش بالرياض", desc: "فنيون متخصصون لجميع الأثاث", slug: "furniture-disassembly-and-reassembly-in-riyadh/", icon: "fas fa-wrench" },
-                { title: "دينا نقل عفش بالرياض", desc: "شاحنات مجهزة بحمولات متنوعة", slug: "dina-furniture-moving-riyadh/", icon: "fas fa-truck" },
+                { title: "دينا نقل عفش بالرياض", desc: "سيارات مجهزة بحمولات متنوعة", slug: "dina-furniture-moving-riyadh/", icon: "fas fa-truck" },
                 { title: "ونيت نقل عفش بالرياض", desc: "نقل سريع للأحمال الخفيفة", slug: "wanet-furniture-moving-riyadh/", icon: "fas fa-truck-pickup" },
                 { title: "تغليف العفش بالرياض", desc: "حماية ضد الخدوش والكسر", slug: "furniture-packaging-wrapping-riyadh/", icon: "fas fa-box-open" },
-                { title: "تخزين العفش بالرياض", desc: "مستودعات مؤمنة ومكيفة", slug: "furniture-storage-riyadh/", icon: "fas fa-warehouse" },
-                { title: "نقل عفش خارج الرياض", desc: "نقل بين المدن مع الضمان", slug: "furniture-moving-outside-riyadh/", icon: "fas fa-route" },
+                { title: "تخزين العفش بالرياض", desc: "مستودعات تخزين مجهزة", slug: "furniture-storage-riyadh/", icon: "fas fa-warehouse" },
+                { title: "نقل عفش شقق بالرياض", desc: "نقل أثاث الشقق والمصاعد", slug: "apartment-furniture-moving-riyadh/", icon: "fas fa-door-open" },
+                { title: "نقل أثاث فلل بالرياض", desc: "نقل أثاث الفلل والمنازل", slug: "villa-furniture-moving-riyadh/", icon: "fas fa-home" },
+                { title: "نقل عفش خارج الرياض", desc: "نقل بين المدن مع المتابعة", slug: "furniture-moving-outside-riyadh/", icon: "fas fa-route" },
                 { title: "نقل مكاتب وشركات بالرياض", desc: "نقل احترافي لمقرات العمل", slug: "office-commercial-moving-riyadh/", icon: "fas fa-building" },
+                { title: "ونش رفع أثاث بالرياض", desc: "للأدوار المرتفعة والمداخل الضيقة", slug: "crane-winch-furniture-lifting-riyadh/", icon: "fas fa-arrow-up" },
                 { title: "أسعار نقل العفش بالرياض", desc: "دليل شامل لتكلفة نقل الأثاث والعوامل المؤثرة وحساب الأسعار", slug: "furniture-moving-prices-riyadh/", icon: "fas fa-calculator" }
             ];
 

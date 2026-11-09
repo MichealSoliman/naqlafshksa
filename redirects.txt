@@ -1,0 +1,34 @@
+# 301 Permanent Redirects for naqlafshksa.com
+# Format: [Source URL / Pattern] -> [Destination URL]
+
+# Canonical Non-trailing slash to trailing slash (Standard HTTP 301)
+/about                                              https://www.naqlafshksa.com/about/
+/contact                                            https://www.naqlafshksa.com/contact/
+/areas                                              https://www.naqlafshksa.com/areas/
+/blog                                               https://www.naqlafshksa.com/blog/
+/dina-furniture-moving-riyadh                       https://www.naqlafshksa.com/dina-furniture-moving-riyadh/
+/wanet-furniture-moving-riyadh                      https://www.naqlafshksa.com/wanet-furniture-moving-riyadh/
+/furniture-disassembly-and-reassembly-in-riyadh     https://www.naqlafshksa.com/furniture-disassembly-and-reassembly-in-riyadh/
+/furniture-packaging-wrapping-riyadh                https://www.naqlafshksa.com/furniture-packaging-wrapping-riyadh/
+/furniture-storage-riyadh                           https://www.naqlafshksa.com/furniture-storage-riyadh/
+/furniture-moving-outside-riyadh                    https://www.naqlafshksa.com/furniture-moving-outside-riyadh/
+/office-commercial-moving-riyadh                    https://www.naqlafshksa.com/office-commercial-moving-riyadh/
+/crane-winch-furniture-lifting-riyadh               https://www.naqlafshksa.com/crane-winch-furniture-lifting-riyadh/
+/furniture-moving-prices-riyadh                     https://www.naqlafshksa.com/furniture-moving-prices-riyadh/
+/apartment-furniture-moving-riyadh                  https://www.naqlafshksa.com/apartment-furniture-moving-riyadh/
+/villa-furniture-moving-riyadh                      https://www.naqlafshksa.com/villa-furniture-moving-riyadh/
+
+# Phase 2 Neighborhoods - Graceful Fallback to Areas Hub
+/areas/furniture-moving-hayu-al-arid-riyadh/        https://www.naqlafshksa.com/areas/
+/areas/furniture-moving-hayu-al-rabi-riyadh/        https://www.naqlafshksa.com/areas/
+/areas/furniture-moving-hayu-al-aqiq-riyadh/        https://www.naqlafshksa.com/areas/
+/areas/furniture-moving-hayu-al-yarmouk-riyadh/     https://www.naqlafshksa.com/areas/
+/areas/furniture-moving-hayu-qurtubah-riyadh/       https://www.naqlafshksa.com/areas/
+/areas/furniture-moving-hayu-al-naseem-riyadh/      https://www.naqlafshksa.com/areas/
+/areas/furniture-moving-hayu-al-hamra-riyadh/       https://www.naqlafshksa.com/areas/
+/areas/furniture-moving-hayu-al-sulaimaniyah-riyadh/ https://www.naqlafshksa.com/areas/
+/areas/furniture-moving-hayu-king-fahd-riyadh/      https://www.naqlafshksa.com/areas/
+/areas/furniture-moving-hayu-dhahrat-laban-riyadh/  https://www.naqlafshksa.com/areas/
+/areas/furniture-moving-hayu-al-suwaidi-riyadh/     https://www.naqlafshksa.com/areas/
+/areas/furniture-moving-hayu-al-shifa-riyadh/       https://www.naqlafshksa.com/areas/
+

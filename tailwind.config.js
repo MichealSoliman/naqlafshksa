@@ -3,6 +3,7 @@ module.exports = {
   content: [
     "./*.html",
     "./about/**/*.html",
+    "./apartment-furniture-moving-riyadh/**/*.html",
     "./areas/**/*.html",
     "./blog/**/*.html",
     "./contact/**/*.html",
@@ -14,6 +15,7 @@ module.exports = {
     "./furniture-packaging-wrapping-riyadh/**/*.html",
     "./furniture-storage-riyadh/**/*.html",
     "./office-commercial-moving-riyadh/**/*.html",
+    "./villa-furniture-moving-riyadh/**/*.html",
     "./wanet-furniture-moving-riyadh/**/*.html",
     "./src/**/*.{html,js}",
     "./asstes/**/*.js"
