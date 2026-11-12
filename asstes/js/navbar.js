@@ -924,6 +924,9 @@
     // 6. حقن النافبار في الصفحة (Navbar Injection)
     // =========================================================================
     function initSiteNavbar() {
+        // حقن أنماط النافبار الأساسية دائماً لضمان تناسق العرض على الجوال وسطح المكتب
+        injectNavbarStyles();
+
         let headerTarget = document.getElementById('site-header') ||
                            document.getElementById('header') ||
                            document.querySelector('header');
@@ -933,7 +936,6 @@
             return;
         }
 
-        injectNavbarStyles();
         const basePath = getBasePath();
         const navbarHtml = buildNavbarHTML(basePath);
 
