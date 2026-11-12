@@ -1188,12 +1188,6 @@
     // 5. تفعيل الفوتر وربط الأحداث (Injection & Activation)
     // =========================================================================
     function initSiteFooter() {
-        // حقن الـ CSS المنفصل أولاً
-        injectFooterStyles();
-
-        const basePath = getBasePath();
-        const footerHtml = buildFooterHTML(basePath);
-
         let footerTarget = document.getElementById('site-footer') ||
                            document.getElementById('master-footer') ||
                            document.querySelector('footer.mf-root') ||
@@ -1215,6 +1209,12 @@
             }
             return;
         }
+
+        // حقن الـ CSS المنفصل أولاً في حال لم يكن الفوتر ثابتاً
+        injectFooterStyles();
+
+        const basePath = getBasePath();
+        const footerHtml = buildFooterHTML(basePath);
 
         if (footerTarget) {
             const wrapper = document.createElement('div');

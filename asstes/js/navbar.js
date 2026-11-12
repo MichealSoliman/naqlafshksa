@@ -924,10 +924,6 @@
     // 6. حقن النافبار في الصفحة (Navbar Injection)
     // =========================================================================
     function initSiteNavbar() {
-        injectNavbarStyles();
-        const basePath = getBasePath();
-        const navbarHtml = buildNavbarHTML(basePath);
-
         let headerTarget = document.getElementById('site-header') ||
                            document.getElementById('header') ||
                            document.querySelector('header');
@@ -936,6 +932,10 @@
             setupNavbarEvents();
             return;
         }
+
+        injectNavbarStyles();
+        const basePath = getBasePath();
+        const navbarHtml = buildNavbarHTML(basePath);
 
         if (headerTarget) {
             const wrapper = document.createElement('div');
